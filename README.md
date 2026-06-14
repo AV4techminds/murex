@@ -1,27 +1,42 @@
-# murex
-Murex for AV-Techminds
-# Murex Foundation
+# Murex Learning Journey
 
-## Purpose
-This folder contains the core concepts needed to understand Murex from the ground up.
+## Objective
 
-## Topics
-- What is Murex
-- MX.3 overview
-- Murex architecture
-- Trade lifecycle
-- Financial market basics
-- Front Office, Middle Office, Back Office
-- Pricing, risk, and post-trade basics
+Become a strong techno-functional professional in:
 
-## Why this folder matters
-Everything in Murex starts from this foundation. If these concepts are clear, the rest of the modules become easier to understand.
+- Murex
+- BFSI
+- Treasury
+- Datamart
+- Production Support
+- Python
+- DevOps
+- AWS
 
-## Study format
-- Read the concept
-- Write short notes
-- Add examples
-- Revise weekly
+## Learning Plan
 
-## Status
-- In progress
+### BFSI Foundation
+- [ ] Module 1
+- [ ] Module 2
+- [ ] Module 3
+
+### Murex
+- [ ] Static Data
+- [ ] Market Data
+- [ ] Risk
+- [ ] Settlement
+
+### Python
+- [ ] Basics
+- [ ] File Handling
+- [ ] Automation
+
+### DevOps
+- [ ] Git
+- [ ] Jenkins
+- [ ] Docker
+
+### AWS
+- [ ] IAM
+- [ ] EC2
+- [ ] S3

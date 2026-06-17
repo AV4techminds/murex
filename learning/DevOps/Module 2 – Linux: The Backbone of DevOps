@@ -1,0 +1,295 @@
+
+
+Learning Objective
+
+Understand:
+
+- What is Linux?
+- Why Linux is important in DevOps?
+- Why cloud platforms use Linux?
+- Why banking applications use Linux?
+- How Linux helps Murex and Regulatory Reporting systems?
+
+---
+
+1. Introduction
+
+Linux is one of the most widely used operating systems in enterprise environments.
+
+Modern DevOps, Cloud, Banking, and Enterprise Applications heavily depend on Linux because of its stability, security, performance, and automation capabilities.
+
+Most DevOps tools and cloud platforms are designed to work efficiently on Linux-based systems.
+
+Therefore Linux is often called the backbone of modern DevOps.
+
+---
+
+2. What is Linux?
+
+Linux is an operating system that manages:
+
+- CPU
+- Memory
+- Disk
+- Files
+- Processes
+- Networking
+
+Similar to Windows and macOS, Linux acts as an interface between applications and hardware.
+
+---
+
+3. Why Linux is the Backbone of DevOps
+
+DevOps focuses on:
+
+- Automation
+- Continuous Integration
+- Continuous Delivery
+- Monitoring
+- Deployment
+- Infrastructure Management
+
+Linux supports all these activities efficiently.
+
+Reasons:
+
+Stability
+
+Linux servers can run continuously for long periods without interruptions.
+
+Security
+
+Linux provides:
+
+- User Management
+- Group Management
+- File Permissions
+- Access Controls
+
+Automation
+
+Linux supports:
+
+- Shell Scripting
+- Cron Jobs
+- Batch Processing
+
+Performance
+
+Linux consumes fewer resources and performs efficiently under heavy workloads.
+
+---
+
+4. Linux and DevOps Tools
+
+Most DevOps tools either run on Linux or are optimized for Linux environments.
+
+Examples:
+
+Tool| Purpose
+Git| Version Control
+Jenkins| CI/CD Automation
+Docker| Containerization
+Kubernetes| Container Orchestration
+Ansible| Configuration Management
+
+Linux provides the environment where these tools operate effectively.
+
+---
+
+5. Linux in Cloud Computing
+
+Cloud infrastructure does not eliminate the need for Linux.
+
+Most cloud servers run Linux operating systems.
+
+Examples:
+
+- Amazon Linux
+- Ubuntu
+- RedHat Enterprise Linux
+
+AWS services such as EC2 frequently use Linux-based virtual machines.
+
+Therefore Linux knowledge is essential even in cloud environments.
+
+---
+
+6. Linux in Banking Systems
+
+Banking applications require:
+
+- Security
+- Reliability
+- High Availability
+- Performance
+
+Linux satisfies these requirements and is widely used in:
+
+- Treasury Applications
+- Murex Environments
+- Regulatory Reporting Systems
+- Databases
+- Batch Processing Platforms
+
+---
+
+7. Linux in Murex and Regulatory Reporting
+
+Typical banking workflow:
+
+Source Systems
+↓
+Linux Server
+↓
+Control-M Scheduler
+↓
+Application Processing
+↓
+Database
+↓
+Regulatory Reports
+↓
+PRA / ECB / HKMA / MAS
+
+Linux supports:
+
+- File Handling
+- Log Monitoring
+- Batch Execution
+- Process Management
+- Troubleshooting
+
+---
+
+8. Important Linux Commands Used in Production Support
+
+Process Monitoring
+
+ps -ef
+top
+
+---
+
+Disk Monitoring
+
+df -h
+
+---
+
+Memory Monitoring
+
+free -m
+
+---
+
+Log Analysis
+
+grep "ERROR" application.log
+tail -f application.log
+
+---
+
+Permission Management
+
+chmod 755 script.sh
+
+---
+
+9. Why Linux is Important for Future DevOps Engineers
+
+DevOps engineers use Linux for:
+
+- Application Deployment
+- Monitoring
+- Troubleshooting
+- Automation
+- Cloud Operations
+
+Without Linux knowledge, it becomes difficult to effectively manage DevOps and cloud environments.
+
+---
+
+10. Key Takeaways
+
+Linux is:
+
+- Stable
+- Secure
+- Lightweight
+- Automation Friendly
+- Cloud Ready
+
+Linux serves as the foundation for:
+
+- DevOps
+- AWS
+- Enterprise Applications
+- Banking Systems
+- Murex Environments
+
+Therefore Linux is called the backbone of modern DevOps.
+
+---
+
+Complete Story Recall
+
+Modern DevOps relies heavily on Linux because it provides a stable, secure, and automation-friendly platform for running applications and infrastructure. Most DevOps tools, cloud platforms, and banking applications operate on Linux-based environments. Linux enables automation through scripting, simplifies monitoring and troubleshooting, and provides strong security controls. In banking environments such as Murex and Regulatory Reporting systems, Linux supports file processing, batch execution, monitoring, and operational stability. As organizations continue moving toward cloud platforms such as AWS, Linux remains a critical foundation for DevOps and cloud engineering.
+
+---
+
+Interview Questions & Answers
+
+Q1. Why is Linux called the backbone of DevOps?
+
+Linux provides a stable, secure, and automation-friendly environment that supports DevOps tools, cloud platforms, and enterprise applications.
+
+---
+
+Q2. Why do DevOps engineers need Linux knowledge?
+
+DevOps engineers use Linux for deployment, automation, monitoring, troubleshooting, and infrastructure management.
+
+---
+
+Q3. Why do most cloud platforms use Linux?
+
+Linux is lightweight, secure, scalable, and cost-effective, making it ideal for cloud environments.
+
+---
+
+Q4. How is Linux used in banking applications?
+
+Linux supports application hosting, batch processing, monitoring, file management, and regulatory reporting workflows.
+
+---
+
+Q5. How is Linux used in Murex support?
+
+Linux is used for log analysis, file handling, process monitoring, batch execution, troubleshooting, and operational support.
+
+---
+
+Glossary
+
+Linux:
+An operating system widely used in servers and enterprise environments.
+
+Shell Script:
+A sequence of Linux commands used to automate tasks.
+
+Process:
+A running application or program.
+
+Log File:
+A file that records application events and errors.
+
+Cron Job:
+A scheduled task in Linux.
+
+Permission:
+Controls who can read, write, or execute files and directories.
+
+DevOps:
+A culture and set of practices that combine Development and Operations teams to improve software delivery.

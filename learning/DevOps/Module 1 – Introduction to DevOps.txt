@@ -1,0 +1,275 @@
+Module 1 – Introduction to DevOps
+
+Learning Objective
+
+Understand:
+
+- What is DevOps?
+- Why was DevOps introduced?
+- What problems does DevOps solve?
+- How does DevOps help enterprise applications like Murex?
+
+---
+
+1. What is DevOps?
+
+DevOps is a culture, practice, and set of processes that enables Development and Operations teams to work together throughout the software lifecycle.
+
+The primary objective of DevOps is to deliver software faster, more reliably, and with fewer errors through collaboration and automation.
+
+DevOps is not a tool. It is a way of working that promotes communication, automation, continuous feedback, and shared responsibility.
+
+---
+
+2. Why Was DevOps Introduced?
+
+Before DevOps, Development and Operations teams worked separately.
+
+Development Team Responsibilities
+
+- Write code
+- Fix defects
+- Build new features
+
+The development team usually focused on delivering functionality.
+
+---
+
+Operations Team Responsibilities
+
+- Deploy applications
+- Manage servers
+- Monitor production systems
+- Support business users
+
+The operations team focused on system stability.
+
+---
+
+3. Problems Before DevOps
+
+Because the two teams worked independently, many issues occurred:
+
+- Communication gaps
+- Manual deployments
+- Slow software releases
+- Frequent production failures
+- Long troubleshooting cycles
+- Blame culture between teams
+
+Typical situation:
+
+Development Team:
+"My code works on my machine."
+
+Operations Team:
+"The application is failing in production."
+
+This created delays and operational risks.
+
+---
+
+4. How DevOps Solves These Problems
+
+DevOps promotes continuous collaboration between Development and Operations teams.
+
+Instead of working separately, both teams work together throughout the software lifecycle.
+
+Benefits include:
+
+- Faster software delivery
+- Better communication
+- Reduced manual effort
+- Automated deployments
+- Improved software quality
+- Faster issue detection
+- More reliable releases
+
+---
+
+5. What Does DevOps Focus On?
+
+DevOps focuses on:
+
+Collaboration
+
+Development and Operations work together.
+
+---
+
+Automation
+
+Manual activities are automated.
+
+Examples:
+
+- Code builds
+- Testing
+- Deployment
+- Monitoring
+
+---
+
+Continuous Integration (CI)
+
+Developers frequently integrate code changes into a shared repository.
+
+---
+
+Continuous Delivery (CD)
+
+Applications can be deployed quickly and reliably through automated pipelines.
+
+---
+
+Monitoring
+
+Applications and infrastructure are continuously monitored to detect issues early.
+
+---
+
+6. Real Banking Example
+
+Suppose HSBC needs to release an enhancement to its regulatory reporting application.
+
+Traditional Process
+
+Developer writes code
+↓
+Email sent to Operations Team
+↓
+Manual deployment
+↓
+Deployment issue
+↓
+Rollback
+↓
+Business delay
+
+---
+
+DevOps Process
+
+Developer commits code
+↓
+Automated Build
+↓
+Automated Testing
+↓
+Automated Deployment
+↓
+Monitoring
+↓
+Feedback
+
+Result:
+
+- Faster release
+- Reduced errors
+- Improved reliability
+
+---
+
+7. How DevOps Helps Murex
+
+In Murex environments, DevOps supports:
+
+- Release Management
+- Environment Management
+- Automation
+- Monitoring
+- CI/CD Pipelines
+- Production Stability
+
+Future Murex ecosystems may increasingly use:
+
+- AWS Cloud
+- Docker Containers
+- Jenkins Pipelines
+- Infrastructure Automation
+
+Therefore, DevOps knowledge is valuable for Murex professionals.
+
+---
+
+8. Key Takeaways
+
+DevOps is:
+
+- A culture
+- A practice
+- A collaboration model
+
+DevOps is NOT:
+
+- A tool
+- A programming language
+- A single software product
+
+Its goal is to improve software delivery speed, quality, reliability, and operational stability.
+
+---
+
+Complete Story Recall
+
+Earlier, Development and Operations teams worked separately, leading to communication gaps, manual deployments, delays, and production failures. Organizations needed a better way to deliver software quickly and reliably. DevOps emerged as a culture and engineering practice that promotes collaboration, automation, continuous integration, continuous delivery, and monitoring. By combining development and operations efforts, DevOps enables organizations to release software faster, reduce operational risks, and improve system reliability. In banking environments such as Murex, DevOps plays a critical role in deployment automation, release management, monitoring, and operational stability.
+
+---
+
+Interview Questions & Answers
+
+Q1. What is DevOps?
+
+DevOps is a culture and set of practices that combines Development and Operations teams to improve software delivery speed, quality, and reliability.
+
+---
+
+Q2. Is DevOps a tool?
+
+No. DevOps is a culture and methodology. Tools such as Git, Jenkins, Docker, and AWS support DevOps practices.
+
+---
+
+Q3. Why was DevOps introduced?
+
+DevOps was introduced to eliminate communication gaps, reduce manual effort, improve collaboration, automate deployments, and increase software delivery speed.
+
+---
+
+Q4. What are the benefits of DevOps?
+
+- Faster deployments
+- Better collaboration
+- Automation
+- Improved quality
+- Reduced failures
+- Faster feedback
+
+---
+
+Q5. How does DevOps help banking applications?
+
+DevOps improves release management, deployment automation, monitoring, and operational stability, helping banks deliver reliable applications faster.
+
+Glossary
+
+Development Team:
+Team responsible for building and enhancing software.
+
+Operations Team:
+Team responsible for deployment, infrastructure, monitoring, and production support.
+
+Automation:
+Using tools and scripts to perform tasks automatically.
+
+Continuous Integration (CI):
+Frequent integration of code changes into a shared repository.
+
+Continuous Delivery (CD):
+Automated and reliable software deployment process.
+
+Pipeline:
+A sequence of automated stages such as build, test, and deployment.
+
+Monitoring:
+Continuous observation of application and infrastructure health.

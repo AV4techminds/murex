@@ -1,0 +1,355 @@
+# 📘 Murex Learning & Documentation Plan
+
+> This document defines the learning strategy, documentation standards, progress tracking, and repository maintenance guidelines for the **Murex Techno-Functional Master Learning Repository**.
+
+---
+
+# 🎯 Mission
+
+Build a complete Murex Techno-Functional Knowledge Base from Investment Banking fundamentals to advanced Production Support by combining:
+
+- Business Knowledge
+- Functional Knowledge
+- Technical Knowledge
+- Production Support
+- Real-Time Banking Scenarios
+- Interview Preparation
+
+---
+
+# 📖 Learning Philosophy
+
+Every topic will be studied from multiple perspectives instead of memorizing concepts.
+
+Each module should answer:
+
+- What is it?
+- Why is it required?
+- Where is it used?
+- How does Murex handle it?
+- What happens technically?
+- What are the production issues?
+- How is it asked in interviews?
+
+---
+
+# 📚 Documentation Standard
+
+Every module follows the same documentation structure.
+
+├── README.md
+├── Business Concepts.md
+├── Functional Perspective.md
+├── Technical Perspective.md
+├── Architecture.md
+├── Trade Flow.md
+├── Production Scenarios.md
+├── Interview Questions.md
+├── Glossary.md
+├── Summary.md
+└── References.md
+```
+
+---
+
+# 📝 Documentation Template
+
+Every topic will be documented using the following template.
+
+```text
+1. Introduction
+
+2. Objective
+
+3. Business Definition
+
+4. Why is it Required?
+
+5. Business Example
+
+6. Investment Banking Perspective
+
+7. Trade Lifecycle Perspective
+
+8. Murex Functional Perspective
+
+9. Technical Perspective
+
+10. Architecture
+
+11. Trade Flow
+
+12. Production Support Perspective
+
+13. Real-Time Scenario
+
+14. Investigation Steps
+
+15. Common Issues
+
+16. Best Practices
+
+17. Interview Questions
+
+18. Glossary
+
+19. Summary
+
+20. References
+```
+
+---
+
+# 📖 Learning Sequence
+
+```text
+Investment Banking
+        │
+        ▼
+Financial Markets
+        │
+        ▼
+Financial Instruments
+        │
+        ▼
+Trade Lifecycle
+        │
+        ▼
+Trade Processing
+        │
+        ▼
+Workflow
+        │
+        ▼
+Core Architecture
+        │
+        ▼
+Static Data
+        │
+        ▼
+Market Data
+        │
+        ▼
+Pricing
+        │
+        ▼
+Position Management
+        │
+        ▼
+Hedging
+        │
+        ▼
+Risk Management
+        │
+        ▼
+Profit & Loss
+        │
+        ▼
+Settlement
+        │
+        ▼
+Accounting
+        │
+        ▼
+General Ledger
+        │
+        ▼
+Regulatory Reporting
+        │
+        ▼
+DataMart
+        │
+        ▼
+MxML
+        │
+        ▼
+Integration
+        │
+        ▼
+Production Support
+        │
+        ▼
+Interview Preparation
+```
+
+---
+
+# 📌 Learning Workflow
+
+Every study session follows the same process.
+
+```text
+Study Topic
+
+↓
+
+Understand Business Concept
+
+↓
+
+Understand Functional Flow
+
+↓
+
+Understand Technical Flow
+
+↓
+
+Understand Murex Perspective
+
+↓
+
+Understand Production Support
+
+↓
+
+Document Notes
+
+↓
+
+Update Glossary
+
+↓
+
+Create Trade Flow
+
+↓
+
+Add Production Scenario
+
+↓
+
+Add Interview Questions
+
+↓
+
+Update Progress Tracker
+
+↓
+
+Commit to GitHub
+```
+
+---
+
+# 📂 Repository Maintenance
+
+For every completed topic:
+
+- Update module documentation
+- Update glossary
+- Update interview questions
+- Update production scenarios
+- Update trade flow
+- Update architecture diagrams
+- Update learning tracker
+- Commit changes to GitHub
+
+---
+
+# 📖 Glossary Maintenance
+
+Every new concept must be added to the appropriate glossary.
+
+Categories:
+
+- Banking
+- Financial Markets
+- Financial Instruments
+- Murex
+- Risk
+- Settlement
+- Accounting
+- DataMart
+- Integration
+- SQL
+- Linux
+- Production Support
+
+---
+
+# 🎯 Documentation Goals
+
+Each module should contain:
+
+✅ Business Concepts
+
+✅ Functional Concepts
+
+✅ Technical Concepts
+
+✅ Architecture
+
+✅ End-to-End Flow
+
+✅ Production Support
+
+✅ Troubleshooting
+
+✅ Real-Time Scenarios
+
+✅ Interview Questions
+
+✅ Glossary
+
+✅ Summary
+
+---
+
+# 💼 Production Support Documentation
+
+Every module should include:
+
+- Common Production Issues
+- Root Cause Analysis (RCA)
+- Investigation Checklist
+- Logs to Verify
+- SQL Validation
+- Batch Verification
+- Interface Verification
+- Escalation Path
+- Resolution Steps
+
+---
+
+# 🎤 Interview Preparation
+
+Each module should include:
+
+- Functional Questions
+- Technical Questions
+- Scenario-Based Questions
+- Production Support Questions
+- Frequently Asked Questions
+
+---
+
+# 📈 Documentation Quality Checklist
+
+Before completing a topic, verify:
+
+- [ ] Business concept explained
+- [ ] Functional flow documented
+- [ ] Technical flow documented
+- [ ] Murex perspective added
+- [ ] Architecture included
+- [ ] Trade flow updated
+- [ ] Production scenario documented
+- [ ] Investigation steps added
+- [ ] Interview questions prepared
+- [ ] Glossary updated
+- [ ] Summary completed
+- [ ] GitHub committed
+
+---
+
+# 🚀 Final Goal
+
+Build a professional Murex Techno-Functional Knowledge Repository that serves as:
+
+- Learning Guide
+- Revision Notes
+- Production Support Handbook
+- Interview Preparation Guide
+- Personal Knowledge Base
+- Long-Term Career Reference

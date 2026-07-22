@@ -1,10 +1,38 @@
 
 # Murex Techno-Functional Learning
-
-## Module 7 – Risk Management (Part 1)
-
 ### Date: 22-July-2026
-
+##############################
+Phase 5 – Risk Management
+##############################
+ Risk Introduction
+ Types of Risk
+ Market Risk Basics
+ Credit Risk Basics
+ Liquidity Risk Basics
+ Operational Risk Basics
+ Risk Appetite
+ Risk Tolerance
+ Temporary Exposure
+ Permanent Exposure
+ Hedging
+ Production Support Perspective
+ FX Risk
+ Interest Rate Risk
+ Equity Risk
+ Commodity Risk
+ Counterparty Credit Risk
+ Settlement Risk
+ Country Risk
+ Concentration Risk
+ VaR (Value at Risk)
+ Stress Testing
+ Scenario Analysis
+ Limit Monitoring
+ Risk Engine
+ Risk Reports
+ Risk Workflow
+ Risk Investigation
+ Risk Production Issues
 ---
 
 # Chapter 1: What is Risk?

@@ -336,6 +336,232 @@ Every module includes:
 | Interview Preparation | ⏳ |
 
 ---
+# 📚 Murex Techno-Functional Learning Roadmap
+
+## 🟢 Phase 1 – Investment Banking Fundamentals
+
+- [ ] Module01 – Investment Banking
+- [ ] Module02 – Financial Markets
+- [ ] Module03 – Financial Instruments
+- [ ] Module04 – Trade Lifecycle
+- [ ] Module05 – Front Office, Middle Office & Back Office
+
+---
+
+## 🟢 Phase 2 – Murex Fundamentals
+
+- [x] Module06 – Murex Introduction
+- [x] Module07 – Environments & SDLC
+- [x] Module08 – Trade Processing
+- [ ] Module09 – Workflow Foundation
+- [ ] Module10 – Core Architecture
+
+---
+
+## 🟢 Phase 3 – Static & Market Data
+
+- [ ] Module11 – Static Data
+    - [ ] Counterparty
+    - [ ] Portfolio
+    - [ ] Book Structure
+    - [ ] Legal Entity
+    - [ ] Trader
+    - [ ] Product Templates
+
+- [ ] Module12 – Market Data
+    - [ ] Yield Curves
+    - [ ] FX Rates
+    - [ ] Interest Rates
+    - [ ] Volatility
+    - [ ] Pricing Curves
+    - [ ] Market Data Feed
+
+---
+
+## 🟢 Phase 4 – Pricing & Position Management
+
+- [ ] Module13 – Pricing
+    - [ ] Mark-to-Market
+    - [ ] NPV
+    - [ ] Pricing Models
+    - [ ] Sensitivities
+
+- [ ] Position Management
+    - [ ] Position
+    - [ ] Net Position
+    - [ ] Gross Position
+    - [ ] Exposure
+    - [ ] Hedging
+
+---
+
+## 🟢 Phase 5 – Risk Management
+
+- [x] Risk Introduction
+- [x] Types of Risk
+- [x] Market Risk Basics
+- [x] Credit Risk Basics
+- [x] Liquidity Risk Basics
+- [x] Operational Risk Basics
+- [x] Risk Appetite
+- [x] Risk Tolerance
+- [x] Temporary Exposure
+- [x] Permanent Exposure
+- [x] Hedging
+- [x] Production Support Perspective
+
+### Remaining Topics
+
+- [ ] FX Risk
+- [ ] Interest Rate Risk
+- [ ] Equity Risk
+- [ ] Commodity Risk
+- [ ] Counterparty Credit Risk
+- [ ] Settlement Risk
+- [ ] Country Risk
+- [ ] Concentration Risk
+- [ ] VaR (Value at Risk)
+- [ ] Stress Testing
+- [ ] Scenario Analysis
+- [ ] Limit Monitoring
+- [ ] Risk Engine
+- [ ] Risk Reports
+- [ ] Risk Workflow
+- [ ] Risk Investigation
+- [ ] Risk Production Issues
+
+---
+
+## 🟢 Phase 6 – PnL & Valuation
+
+- [ ] PnL Introduction
+- [ ] Realized PnL
+- [ ] Unrealized PnL
+- [ ] Daily PnL
+- [ ] Valuation
+- [ ] Mark-to-Market
+- [ ] Revaluation
+- [ ] Pricing Adjustments
+- [ ] PnL Explain
+- [ ] Production Support
+
+---
+
+## 🟢 Phase 7 – Settlement & Accounting
+
+- [ ] Settlement Lifecycle
+- [ ] Cash Settlement
+- [ ] Securities Settlement
+- [ ] Settlement Instructions
+- [ ] Nostro & Vostro
+- [ ] Payment Process
+- [ ] Settlement Failures
+- [ ] Accounting Entries
+- [ ] Event Accounting
+- [ ] General Ledger
+- [ ] Accounting Interfaces
+
+---
+
+## 🟢 Phase 8 – Integration
+
+- [ ] MxML
+- [ ] XML Messages
+- [ ] APIs
+- [ ] REST
+- [ ] SOAP
+- [ ] MQ
+- [ ] Kafka
+- [ ] File Interfaces
+- [ ] Scheduling
+- [ ] Batch Processing
+
+---
+
+## 🟢 Phase 9 – Regulatory Reporting
+
+- [ ] Basel III
+- [ ] Basel IV
+- [ ] Leverage Ratio
+- [ ] RWA
+- [ ] Liquidity Reporting
+- [ ] Regulatory Reports
+- [ ] Report Generation
+- [ ] Report Validation
+
+---
+
+## 🟢 Phase 10 – DataMart
+
+- [ ] DataMart Architecture
+- [ ] Datamart Objects
+- [ ] Extraction
+- [ ] Transformation
+- [ ] Loading
+- [ ] Fact Tables
+- [ ] Dimension Tables
+- [ ] Cubes
+- [ ] Reports
+- [ ] SQL
+- [ ] Performance Tuning
+- [ ] Scheduling
+- [ ] Production Support
+
+---
+
+## 🟢 Phase 11 – Production Support
+
+- [ ] Incident Management
+- [ ] Monitoring
+- [ ] Alert Management
+- [ ] Batch Failures
+- [ ] Trade Issues
+- [ ] Market Data Issues
+- [ ] Risk Issues
+- [ ] PnL Issues
+- [ ] Settlement Issues
+- [ ] Accounting Issues
+- [ ] Datamart Issues
+- [ ] Interface Issues
+- [ ] Performance Issues
+- [ ] RCA
+- [ ] Problem Management
+
+---
+
+## 🟢 Phase 12 – Interview Preparation
+
+- [ ] Banking Questions
+- [ ] Trade Lifecycle
+- [ ] Murex Functional
+- [ ] Murex Technical
+- [ ] DataMart
+- [ ] SQL
+- [ ] Linux
+- [ ] Shell Scripting
+- [ ] Control-M
+- [ ] Production Support
+- [ ] Scenario-Based Questions
+- [ ] HR Questions
+
+---
+
+# 🎯 Final Deliverables
+
+- [ ] Investment Banking Notes
+- [ ] Murex Functional Guide
+- [ ] Murex Technical Guide
+- [ ] Risk Management Handbook
+- [ ] DataMart Handbook
+- [ ] Production Support Handbook
+- [ ] Interview Question Bank
+- [ ] Glossary
+- [ ] Architecture Diagrams
+- [ ] Trade Flow Diagrams
+- [ ] Real-Time Scenarios
+- [ ] GitHub Knowledge Repository
+
+----
 
 # 📌 Repository Goal
 

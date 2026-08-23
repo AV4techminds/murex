@@ -1,928 +1,986 @@
-# Python Topics List
+# Murex Techno-Functional Topics List
 
 ## Purpose
 
-This is the master Python learning checklist.
+Build end-to-end Murex techno-functional understanding:
+
+> Financial Markets → Trade Lifecycle → Murex Functional Modules
+> → Market Data → Risk → Accounting → Settlement
+> → Technical Architecture → Datamart → Interfaces
+> → Workflow/Events → Batch → Integration
+> → Oracle → Unix/Linux → Production Support
 
 Learning approach:
 
-> Concept → Notes → Example → Coding Practice → Real-World Scenario → Interview Questions → Glossary → Review
+> Concept → Business Example → Murex Flow → Technical View
+> → Configuration Concepts → Integration → Troubleshooting
+> → Interview Questions → Glossary
 
 ---
 
-# 01 — Python Fundamentals
-
-- [ ] Python overview
-- [ ] Python interpreter
-- [ ] Python execution model
-- [ ] Python versions
-- [ ] Python installation
-- [ ] Python environment
-- [ ] Interactive interpreter
-- [ ] `.py` files
-- [ ] Python syntax
-- [ ] Indentation
-- [ ] Comments
-- [ ] Variables
-- [ ] Naming conventions
-- [ ] Constants
-- [ ] Keywords
-- [ ] Identifiers
-- [ ] Literals
-- [ ] Dynamic typing
-- [ ] Strong typing
-- [ ] Built-in data types
-- [ ] `int`
-- [ ] `float`
-- [ ] `complex`
-- [ ] `bool`
-- [ ] `str`
-- [ ] `None`
-- [ ] Type checking
-- [ ] `type()`
-- [ ] `isinstance()`
-- [ ] Type conversion
-- [ ] Input
-- [ ] Output
-- [ ] `print()`
-- [ ] `input()`
-
----
-
-# 02 — Operators and Expressions
-
-- [ ] Arithmetic operators
-- [ ] Comparison operators
-- [ ] Assignment operators
-- [ ] Logical operators
-- [ ] Bitwise operators
-- [ ] Membership operators
-- [ ] Identity operators
-- [ ] Operator precedence
-- [ ] Expressions
-- [ ] Boolean expressions
-- [ ] Short-circuit evaluation
-
----
-
-# 03 — Control Flow
-
-- [ ] `if`
-- [ ] `elif`
-- [ ] `else`
-- [ ] Nested conditions
-- [ ] Conditional expressions
-- [ ] `for`
-- [ ] `while`
-- [ ] `range()`
-- [ ] `break`
-- [ ] `continue`
-- [ ] `pass`
-- [ ] Nested loops
-- [ ] Loop `else`
-
----
-
-# 04 — Strings
-
-- [ ] String creation
-- [ ] String indexing
-- [ ] String slicing
-- [ ] String immutability
-- [ ] String concatenation
-- [ ] String repetition
-- [ ] Escape characters
-- [ ] Raw strings
-- [ ] Multiline strings
-- [ ] `lower()`
-- [ ] `upper()`
-- [ ] `strip()`
-- [ ] `lstrip()`
-- [ ] `rstrip()`
-- [ ] `split()`
-- [ ] `join()`
-- [ ] `replace()`
-- [ ] `find()`
-- [ ] `index()`
-- [ ] `startswith()`
-- [ ] `endswith()`
-- [ ] `count()`
-- [ ] String formatting
-- [ ] f-strings
-- [ ] Format specification
-
----
-
-# 05 — Lists
-
-- [ ] List creation
-- [ ] List indexing
-- [ ] List slicing
-- [ ] List mutability
-- [ ] `append()`
-- [ ] `extend()`
-- [ ] `insert()`
-- [ ] `remove()`
-- [ ] `pop()`
-- [ ] `clear()`
-- [ ] `index()`
-- [ ] `count()`
-- [ ] `sort()`
-- [ ] `reverse()`
-- [ ] `sorted()`
-- [ ] List copying
-- [ ] Shallow copy
-- [ ] Nested lists
-- [ ] List unpacking
-
----
-
-# 06 — Tuples
-
-- [ ] Tuple creation
-- [ ] Tuple indexing
-- [ ] Tuple slicing
-- [ ] Tuple immutability
-- [ ] Tuple unpacking
-- [ ] Nested tuples
-- [ ] Tuple methods
-- [ ] Tuple vs list
-- [ ] When to use tuples
-
----
-
-# 07 — Sets
-
-- [ ] Set creation
-- [ ] Set uniqueness
-- [ ] Adding elements
-- [ ] Removing elements
-- [ ] Set union
-- [ ] Set intersection
-- [ ] Set difference
-- [ ] Symmetric difference
-- [ ] Membership testing
-- [ ] Frozen sets
-- [ ] Set vs list
-
----
-
-# 08 — Dictionaries
-
-- [ ] Dictionary creation
-- [ ] Keys
-- [ ] Values
-- [ ] Key-value pairs
-- [ ] Dictionary indexing
-- [ ] `get()`
-- [ ] `keys()`
-- [ ] `values()`
-- [ ] `items()`
-- [ ] `update()`
-- [ ] `pop()`
-- [ ] `popitem()`
-- [ ] `setdefault()`
-- [ ] Dictionary iteration
-- [ ] Dictionary unpacking
-- [ ] Nested dictionaries
-- [ ] Dictionary copying
-- [ ] Dictionary comprehensions
-
----
-
-# 09 — Comprehensions
-
-- [ ] List comprehensions
-- [ ] Conditional list comprehensions
-- [ ] Nested list comprehensions
-- [ ] Set comprehensions
-- [ ] Dictionary comprehensions
-- [ ] Comprehension readability
-- [ ] When not to use comprehensions
-
----
-
-# 10 — Functions
-
-- [ ] Function definition
-- [ ] Function invocation
-- [ ] Parameters
-- [ ] Arguments
-- [ ] Positional arguments
-- [ ] Keyword arguments
-- [ ] Default arguments
-- [ ] Return values
-- [ ] Multiple return values
-- [ ] Function scope
-- [ ] Local variables
-- [ ] Global variables
-- [ ] `global`
-- [ ] `nonlocal`
-- [ ] `*args`
-- [ ] `**kwargs`
-- [ ] Keyword-only arguments
-- [ ] Positional-only arguments
-- [ ] Function annotations
-- [ ] Docstrings
-- [ ] Lambda functions
-- [ ] Higher-order functions
-- [ ] Recursion
-
----
-
-# 11 — Functional Programming Concepts
-
-- [ ] First-class functions
-- [ ] `map()`
-- [ ] `filter()`
-- [ ] `reduce()`
-- [ ] Lambda with `map()`
-- [ ] Lambda with `filter()`
-- [ ] Lambda with `sorted()`
-- [ ] Closures
-- [ ] Functional vs imperative style
-
----
-
-# 12 — Modules and Packages
-
-- [ ] Modules
-- [ ] Import
-- [ ] `import`
-- [ ] `from ... import`
-- [ ] Import aliases
-- [ ] `__name__`
-- [ ] `__main__`
-- [ ] `if __name__ == "__main__"`
-- [ ] Module search path
-- [ ] Packages
-- [ ] `__init__.py`
-- [ ] Absolute imports
-- [ ] Relative imports
-- [ ] Circular imports
-- [ ] Standard library
-- [ ] Third-party packages
-
----
-
-# 13 — Virtual Environments and Dependencies
-
-- [ ] Virtual environments
-- [ ] `venv`
-- [ ] Environment activation
-- [ ] Environment deactivation
-- [ ] `pip`
-- [ ] Package installation
-- [ ] Package upgrade
-- [ ] Package removal
-- [ ] `requirements.txt`
-- [ ] Dependency pinning
-- [ ] Dependency management
-- [ ] Environment-specific configuration
-
----
-
-# 14 — File Handling
-
-- [ ] Filesystem concepts
-- [ ] File paths
-- [ ] Absolute paths
-- [ ] Relative paths
-- [ ] Opening files
-- [ ] Reading files
-- [ ] Writing files
-- [ ] Appending files
-- [ ] File modes
-- [ ] Encoding
-- [ ] Context managers
-- [ ] `with`
-- [ ] File existence
-- [ ] Directory handling
-- [ ] `pathlib`
-
----
-
-# 15 — CSV Processing
-
-- [ ] CSV structure
-- [ ] CSV reader
-- [ ] CSV writer
-- [ ] Headers
-- [ ] Rows
-- [ ] Delimiters
-- [ ] Quoting
-- [ ] CSV validation
-- [ ] Duplicate detection
-- [ ] CSV transformation
-- [ ] CSV reporting
-
----
-
-# 16 — JSON
-
-- [ ] JSON structure
-- [ ] JSON objects
-- [ ] JSON arrays
-- [ ] Nested JSON
-- [ ] JSON parsing
-- [ ] `json.loads()`
-- [ ] `json.dumps()`
-- [ ] JSON files
-- [ ] JSON validation
-- [ ] JSON transformation
-- [ ] JSON API responses
-
----
-
-# 17 — XML
-
-- [ ] XML structure
-- [ ] XML elements
-- [ ] XML attributes
-- [ ] XML hierarchy
-- [ ] XML namespaces
-- [ ] XML parsing
-- [ ] XML creation
-- [ ] XML searching
-- [ ] XML transformation
-- [ ] XML validation concepts
-- [ ] XML integration scenarios
-
----
-
-# 18 — Regular Expressions
-
-- [ ] Regex basics
-- [ ] Character classes
-- [ ] Quantifiers
-- [ ] Anchors
-- [ ] Groups
-- [ ] Capturing groups
-- [ ] Search
-- [ ] Match
-- [ ] Find all
-- [ ] Replace
-- [ ] Regex validation
-- [ ] Log parsing
-- [ ] Trade-reference extraction
-
----
-
-# 19 — Exception Handling
-
-- [ ] Exceptions
-- [ ] Exception hierarchy
-- [ ] `try`
-- [ ] `except`
-- [ ] Multiple exceptions
-- [ ] `else`
-- [ ] `finally`
-- [ ] `raise`
-- [ ] Custom exceptions
-- [ ] Exception chaining
-- [ ] Error messages
-- [ ] Exception logging
-- [ ] Exception-handling standards
-- [ ] Recovery strategies
-
----
-
-# 20 — Object-Oriented Programming
-
-- [ ] OOP concepts
-- [ ] Classes
-- [ ] Objects
-- [ ] Attributes
-- [ ] Methods
-- [ ] `self`
-- [ ] Constructors
-- [ ] `__init__`
-- [ ] Instance variables
-- [ ] Class variables
-- [ ] Instance methods
-- [ ] Class methods
-- [ ] Static methods
-- [ ] Encapsulation
-- [ ] Inheritance
-- [ ] Multiple inheritance
-- [ ] Method overriding
-- [ ] Polymorphism
-- [ ] Composition
-- [ ] Aggregation
-- [ ] Abstract base classes
-- [ ] Properties
-- [ ] `@property`
-- [ ] Dunder methods
-- [ ] When to use OOP
-- [ ] When not to use OOP
-
----
-
-# 21 — Python Standard Library
-
-- [ ] `os`
-- [ ] `sys`
-- [ ] `pathlib`
-- [ ] `datetime`
-- [ ] `time`
-- [ ] `math`
-- [ ] `random`
-- [ ] `statistics`
-- [ ] `collections`
-- [ ] `itertools`
-- [ ] `functools`
-- [ ] `re`
-- [ ] `json`
-- [ ] `csv`
-- [ ] `subprocess`
-- [ ] `shutil`
-- [ ] `glob`
-- [ ] `tempfile`
-
----
-
-# 22 — Logging
-
-- [ ] Why logging matters
-- [ ] Python logging module
-- [ ] Logger
-- [ ] Handler
-- [ ] Formatter
-- [ ] DEBUG
-- [ ] INFO
-- [ ] WARNING
-- [ ] ERROR
-- [ ] CRITICAL
-- [ ] Log files
-- [ ] Log formatting
-- [ ] Timestamps
-- [ ] Exception logging
-- [ ] Rotating logs
-- [ ] Production logging standards
-
----
-
-# 23 — Configuration Management
-
-- [ ] Configuration files
-- [ ] Environment variables
-- [ ] `os.environ`
-- [ ] `.env` concepts
-- [ ] Development configuration
-- [ ] Test configuration
-- [ ] Production configuration
-- [ ] Secrets
-- [ ] Credentials
-- [ ] Configuration validation
-- [ ] Never hard-code secrets
-
----
-
-# 24 — Clean Code
-
-- [ ] PEP 8
-- [ ] Naming conventions
-- [ ] Meaningful variables
-- [ ] Meaningful functions
-- [ ] Function responsibility
-- [ ] Single Responsibility Principle
-- [ ] DRY
-- [ ] KISS
-- [ ] Avoid magic numbers
-- [ ] Constants
-- [ ] Readability
-- [ ] Maintainability
-- [ ] Modularity
-- [ ] Reusability
-- [ ] Code smells
-- [ ] Refactoring
-- [ ] Code review
-
----
-
-# 25 — Type Hints and Documentation
-
-- [ ] Type hints
-- [ ] Function annotations
-- [ ] `Optional`
-- [ ] `Union`
-- [ ] Generic types
-- [ ] Lists in type hints
-- [ ] Dictionaries in type hints
-- [ ] Return type annotations
-- [ ] Docstrings
-- [ ] Module documentation
-- [ ] API documentation concepts
-
----
-
-# 26 — Debugging
-
-- [ ] Python traceback
-- [ ] Reading stack traces
-- [ ] Syntax errors
-- [ ] Runtime errors
-- [ ] Logical errors
-- [ ] Debugging methodology
-- [ ] Breakpoints
-- [ ] Step execution
-- [ ] Variable inspection
-- [ ] Assertions
-- [ ] Debug logging
-- [ ] Root-cause analysis
-
----
-
-# 27 — Testing
-
-- [ ] Why testing matters
-- [ ] Test cases
-- [ ] Unit testing
-- [ ] Integration testing
-- [ ] Regression testing
-- [ ] Positive testing
-- [ ] Negative testing
-- [ ] Boundary testing
-- [ ] `unittest`
-- [ ] `pytest`
-- [ ] Fixtures
-- [ ] Assertions
-- [ ] Mocking
-- [ ] Test coverage
-- [ ] Test organization
-
----
-
-# 28 — Database and SQL with Python
-
-- [ ] Database concepts
-- [ ] SQL fundamentals
-- [ ] Database drivers
-- [ ] Connection
-- [ ] Cursor
-- [ ] SELECT
-- [ ] INSERT
-- [ ] UPDATE
-- [ ] DELETE
-- [ ] Parameterized queries
-- [ ] Transactions
-- [ ] Commit
-- [ ] Rollback
-- [ ] Connection cleanup
-- [ ] Database exception handling
-- [ ] Connection pooling concepts
-
----
-
-# 29 — Oracle + Python
-
-- [ ] Oracle connectivity
-- [ ] Python Oracle driver
-- [ ] Connection configuration
-- [ ] Cursor handling
-- [ ] Query execution
-- [ ] Bind variables
-- [ ] Fetching data
-- [ ] Insert/update processing
-- [ ] Commit
-- [ ] Rollback
-- [ ] Oracle exceptions
-- [ ] Transaction handling
-- [ ] Batch processing
-- [ ] Oracle + automation use cases
-
----
-
-# 30 — HTTP and APIs
-
-- [ ] Internet fundamentals
-- [ ] HTTP
-- [ ] HTTPS
-- [ ] Client
-- [ ] Server
-- [ ] Request
-- [ ] Response
-- [ ] HTTP methods
-- [ ] GET
-- [ ] POST
-- [ ] PUT
-- [ ] PATCH
-- [ ] DELETE
-- [ ] Headers
-- [ ] Query parameters
-- [ ] Request body
-- [ ] Status codes
-- [ ] JSON APIs
-- [ ] REST concepts
-
----
-
-# 31 — API Integration
-
-- [ ] Python HTTP clients
-- [ ] API authentication
-- [ ] Tokens
-- [ ] Headers
-- [ ] Request validation
-- [ ] Response validation
-- [ ] Timeout
-- [ ] Retry
-- [ ] Backoff
-- [ ] Connection failure
-- [ ] HTTP errors
-- [ ] Invalid responses
-- [ ] Logging API calls safely
-- [ ] Idempotency
-- [ ] API integration project
-
----
-
-# 32 — Linux and System Automation with Python
-
-- [ ] Python on Linux
-- [ ] Environment variables
-- [ ] File automation
-- [ ] Directory automation
-- [ ] Process execution
-- [ ] `subprocess`
-- [ ] Shell command execution
-- [ ] Exit codes
-- [ ] Process monitoring
-- [ ] Log processing
-- [ ] Python + Shell integration
-- [ ] Batch automation
-
----
-
-# 33 — File Transfer and Integration
-
-- [ ] SFTP concepts
-- [ ] File upload
-- [ ] File download
-- [ ] File naming conventions
-- [ ] File availability checks
-- [ ] File validation
-- [ ] Duplicate file handling
-- [ ] Partial file handling
-- [ ] Archive
-- [ ] Recovery
-- [ ] Error directories
-- [ ] Integration workflows
-
----
-
-# 34 — Iterators and Generators
-
-- [ ] Iterable
-- [ ] Iterator
-- [ ] `iter()`
-- [ ] `next()`
-- [ ] Generator
-- [ ] `yield`
-- [ ] Generator expressions
-- [ ] Lazy evaluation
-- [ ] Memory-efficient processing
-- [ ] Large-file processing
-
----
-
-# 35 — Decorators and Context Managers
-
-- [ ] Decorator concept
-- [ ] Function wrapping
-- [ ] Custom decorators
-- [ ] Logging decorator
-- [ ] Timing decorator
-- [ ] Context managers
-- [ ] `with`
-- [ ] `__enter__`
-- [ ] `__exit__`
-- [ ] Custom context managers
-
----
-
-# 36 — Concurrency
-
-- [ ] Concurrency concepts
-- [ ] Parallelism
-- [ ] I/O-bound work
-- [ ] CPU-bound work
-- [ ] Threading
-- [ ] Multiprocessing
-- [ ] Thread safety
-- [ ] Synchronization concepts
-- [ ] When to use threading
-- [ ] When to use multiprocessing
-
----
-
-# 37 — Performance
-
-- [ ] Performance fundamentals
-- [ ] Time complexity
-- [ ] Space complexity
-- [ ] Efficient data structures
-- [ ] Memory usage
-- [ ] Large files
-- [ ] Batch processing
-- [ ] Profiling concepts
-- [ ] Avoiding unnecessary work
-- [ ] Performance troubleshooting
-
----
-
-# 38 — Production Support Python
-
-- [ ] Log analysis
-- [ ] Error extraction
-- [ ] File validation
-- [ ] Batch monitoring
-- [ ] Database validation
-- [ ] Reconciliation
-- [ ] Retry
-- [ ] Recovery
-- [ ] Duplicate handling
-- [ ] Partial processing
-- [ ] Incident investigation
-- [ ] Root-cause analysis
-- [ ] Operational reporting
-
----
-
-# 39 — Python + Murex-Relevant Integration Concepts
-
-- [ ] Trade-file processing
+# PART A — FINANCIAL MARKETS FOUNDATION
+
+## 01 — Financial Markets Basics
+
+- [ ] Financial markets overview
+- [ ] Front Office
+- [ ] Middle Office
+- [ ] Back Office
+- [ ] Trade lifecycle
+- [ ] Trade capture
 - [ ] Trade validation
-- [ ] Trade reference handling
+- [ ] Trade enrichment
+- [ ] Trade confirmation
+- [ ] Settlement
+- [ ] Accounting
+- [ ] Risk management
+- [ ] Position
+- [ ] P&L
+- [ ] Market data
+- [ ] Static data
+- [ ] Reference data
+- [ ] Counterparty
+- [ ] Portfolio
+- [ ] Book
+
+---
+
+# 02 — Financial Instruments
+
+- [ ] Cash products
+- [ ] FX
+- [ ] FX Spot
+- [ ] FX Forward
+- [ ] FX Swap
+- [ ] FX Option
+- [ ] Interest Rate products
+- [ ] Deposits
+- [ ] FRA
+- [ ] Interest Rate Swap
+- [ ] OIS
+- [ ] Cross Currency Swap
+- [ ] Bonds
+- [ ] Money Market instruments
+- [ ] Equities
+- [ ] Equity derivatives
+- [ ] Futures
+- [ ] Options
+- [ ] Commodity products
+- [ ] Structured products
+- [ ] Credit products
+- [ ] Product taxonomy
+
+---
+
+# PART B — MUREX FUNDAMENTALS
+
+# 03 — Murex Overview
+
+- [ ] What is Murex
+- [ ] MX.3 overview
+- [ ] Murex platform concepts
+- [ ] Murex modules
+- [ ] Functional architecture
+- [ ] Technical architecture
+- [ ] Front Office
+- [ ] Middle Office
+- [ ] Back Office
+- [ ] Risk
+- [ ] Accounting
+- [ ] Settlement
+- [ ] Reporting
+- [ ] Integration
+- [ ] Data management
+
+---
+
+# 04 — Murex Environment Concepts
+
+- [ ] Development environment
+- [ ] Testing environment
+- [ ] UAT
+- [ ] Production
+- [ ] Environment promotion
+- [ ] Configuration migration
+- [ ] Release management
+- [ ] Version management
+- [ ] Deployment concepts
+- [ ] Environment troubleshooting
+
+---
+
+# PART C — TRADE LIFECYCLE
+
+# 05 — End-to-End Trade Lifecycle
+
+- [ ] Trade capture
+- [ ] Trade validation
+- [ ] Trade enrichment
+- [ ] Static data lookup
+- [ ] Market data lookup
+- [ ] Trade confirmation
+- [ ] Trade amendment
+- [ ] Trade cancellation
+- [ ] Trade settlement
+- [ ] Accounting
+- [ ] Position update
+- [ ] Risk calculation
+- [ ] P&L
+- [ ] Reporting
+- [ ] Reconciliation
+
+---
+
+# 06 — Trade Capture
+
+- [ ] Trade entry
+- [ ] Trade economics
+- [ ] Trade attributes
+- [ ] Counterparty
+- [ ] Book
+- [ ] Portfolio
+- [ ] Trader
+- [ ] Product
+- [ ] Currency
+- [ ] Trade date
+- [ ] Value date
+- [ ] Maturity date
+- [ ] Notional
+- [ ] Price
+- [ ] Rate
+- [ ] Quantity
+
+---
+
+# 07 — Trade Events
+
+- [ ] Trade creation
+- [ ] Amendment
+- [ ] Cancellation
+- [ ] Exercise
+- [ ] Expiry
+- [ ] Fixing
+- [ ] Reset
+- [ ] Settlement
+- [ ] Maturity
+- [ ] Lifecycle events
+- [ ] Event processing
+- [ ] Event dependencies
+
+---
+
+# 08 — Trade Validation and Enrichment
+
+- [ ] Validation rules
+- [ ] Mandatory fields
+- [ ] Static data validation
 - [ ] Counterparty validation
 - [ ] Product validation
+- [ ] Book validation
 - [ ] Currency validation
-- [ ] Date validation
-- [ ] Business-rule validation
-- [ ] XML trade messages
-- [ ] JSON integration
-- [ ] Oracle data validation
-- [ ] Batch processing
-- [ ] File-based integration
-- [ ] API-based integration
-- [ ] Error handling
+- [ ] Market data validation
+- [ ] Enrichment
+- [ ] Defaulting
+- [ ] Reference data lookup
+- [ ] Validation failures
+
+---
+
+# PART D — MUREX FUNCTIONAL AREAS
+
+# 09 — Front Office
+
+- [ ] Trade capture
+- [ ] Trade blotter
+- [ ] Trade inquiry
+- [ ] Position
+- [ ] P&L
+- [ ] Market data usage
+- [ ] Trader workflow
+- [ ] Deal management
+- [ ] Amendments
+- [ ] Cancellations
+
+---
+
+# 10 — Static Data
+
+- [ ] Static data concepts
+- [ ] Counterparties
+- [ ] Legal entities
+- [ ] Books
+- [ ] Portfolios
+- [ ] Traders
+- [ ] Products
+- [ ] Currencies
+- [ ] Calendars
+- [ ] Business centers
+- [ ] Settlement instructions
+- [ ] Static data dependencies
+- [ ] Static data troubleshooting
+
+---
+
+# 11 — Market Data
+
+- [ ] Market data concepts
+- [ ] Yield curves
+- [ ] Interest rates
+- [ ] FX rates
+- [ ] Volatility
+- [ ] Equity prices
+- [ ] Commodity prices
+- [ ] Credit spreads
+- [ ] Fixings
+- [ ] Market data sources
+- [ ] Market data loading
+- [ ] Market data validation
+- [ ] Market data hierarchy
+- [ ] Market data troubleshooting
+
+---
+
+# 12 — Risk Management
+
+- [ ] Risk concepts
+- [ ] Market risk
+- [ ] Credit risk
+- [ ] Liquidity risk
+- [ ] Counterparty risk
+- [ ] Exposure
+- [ ] Sensitivities
+- [ ] Greeks
+- [ ] VaR
+- [ ] Stress testing
+- [ ] Scenario analysis
+- [ ] Limit management
+- [ ] Risk aggregation
+- [ ] Risk reporting
+- [ ] Risk batch processing
+- [ ] Risk troubleshooting
+
+---
+
+# 13 — P&L
+
+- [ ] P&L concepts
+- [ ] Realized P&L
+- [ ] Unrealized P&L
+- [ ] Mark-to-market
+- [ ] Valuation
+- [ ] P&L explain
+- [ ] P&L attribution
+- [ ] Price impact
+- [ ] Rate impact
+- [ ] FX impact
+- [ ] Carry
+- [ ] Accrual
+- [ ] P&L reporting
+- [ ] P&L reconciliation
+
+---
+
+# 14 — Back Office
+
+- [ ] Confirmation
+- [ ] Settlement
+- [ ] Settlement instructions
+- [ ] Payment
+- [ ] Cash flow
+- [ ] Netting
+- [ ] Settlement status
+- [ ] Failed settlement
 - [ ] Reconciliation
-- [ ] Audit logging
+- [ ] Back-office reporting
 
 ---
 
-# 40 — Git and Python Development
+# 15 — Settlement
 
-- [ ] Git repository structure
-- [ ] `.gitignore`
-- [ ] README
-- [ ] Branches
-- [ ] Commits
-- [ ] Commit messages
-- [ ] Pull requests
-- [ ] Code review
-- [ ] Merge
-- [ ] Tags
-- [ ] Versioning
-- [ ] Python project structure
-- [ ] Dependency tracking
+- [ ] Settlement lifecycle
+- [ ] Cash flows
+- [ ] Payment instructions
+- [ ] Settlement instructions
+- [ ] Counterparty SSI
+- [ ] Settlement dates
+- [ ] Payment dates
+- [ ] Netting
+- [ ] Settlement status
+- [ ] Failed settlement
+- [ ] Settlement reconciliation
 
 ---
 
-# 41 — Practice
+# 16 — Accounting
 
-## Beginner
+- [ ] Accounting concepts
+- [ ] Accounting events
+- [ ] Accounting rules
+- [ ] Accounting entries
+- [ ] Debit
+- [ ] Credit
+- [ ] GL
+- [ ] Accounting books
+- [ ] Posting
+- [ ] Accounting date
+- [ ] Value date
+- [ ] Accruals
+- [ ] Revaluation
+- [ ] P&L accounting
+- [ ] Accounting reconciliation
+- [ ] Accounting troubleshooting
 
-- [ ] Variables
-- [ ] Data types
-- [ ] Operators
-- [ ] Conditions
-- [ ] Loops
-- [ ] Strings
-- [ ] Lists
-- [ ] Dictionaries
-- [ ] Functions
+---
 
-## Intermediate
+# PART E — MUREX TECHNICAL FOUNDATION
 
-- [ ] File processing
-- [ ] CSV processing
-- [ ] JSON processing
-- [ ] XML processing
-- [ ] Regex
-- [ ] Exception handling
-- [ ] OOP
-- [ ] Logging
+# 17 — Murex Technical Architecture
+
+- [ ] Murex architecture
+- [ ] Application components
+- [ ] Client/server concepts
+- [ ] Application servers
 - [ ] Database
-- [ ] APIs
-
-## Advanced
-
-- [ ] Automation
-- [ ] Large-file processing
-- [ ] Generators
-- [ ] Decorators
-- [ ] Concurrency
-- [ ] Error recovery
-- [ ] Performance
-- [ ] Integration
-
-## Interview
-
-- [ ] Python fundamentals questions
-- [ ] Data structures questions
-- [ ] Functions questions
-- [ ] OOP questions
-- [ ] Exception questions
-- [ ] File-processing questions
-- [ ] SQL/Python questions
-- [ ] API questions
-- [ ] Linux/Python questions
-- [ ] Production-support scenarios
-- [ ] Coding problems
-- [ ] Debugging scenarios
+- [ ] Oracle
+- [ ] Batch servers
+- [ ] Integration layer
+- [ ] Messaging
+- [ ] File-based integration
+- [ ] Network connectivity
+- [ ] Environment architecture
 
 ---
 
-# 42 — Projects
+# 18 — Murex Data Model Concepts
 
-## Project 1 — File Processing Utility
+- [ ] Murex data concepts
+- [ ] Trade data
+- [ ] Static data
+- [ ] Market data
+- [ ] Position data
+- [ ] Risk data
+- [ ] Accounting data
+- [ ] Reference data
+- [ ] Relationships
+- [ ] Data dependencies
+- [ ] Data lineage
 
-Input file → Validation → Processing → Output → Archive → Error handling
+---
 
-## Project 2 — Log Analyzer
+# 19 — Oracle and Murex
 
-Log files → Parse → Filter → Aggregate → Report
+- [ ] Oracle architecture basics
+- [ ] Murex database concepts
+- [ ] Tables
+- [ ] Views
+- [ ] Indexes
+- [ ] Stored procedures concepts
+- [ ] SQL querying
+- [ ] Joins
+- [ ] Aggregation
+- [ ] Data validation
+- [ ] Transaction concepts
+- [ ] Performance concepts
+- [ ] Database troubleshooting
 
-## Project 3 — Oracle Utility
+---
 
-Python → Oracle → Query → Process → Report
+# 20 — Datamart
 
-## Project 4 — API Integration
+- [ ] Datamart concepts
+- [ ] Reporting data
+- [ ] Data extraction
+- [ ] Data transformation
+- [ ] Data loading
+- [ ] Datamart structure
+- [ ] Reporting queries
+- [ ] Data reconciliation
+- [ ] Datamart batch
+- [ ] Datamart troubleshooting
 
-Python → API → Validate response → Process → Log
+---
 
-## Project 5 — Trade Validator
+# 21 — Murex Batch
 
-Trade input → Business validation → Database validation → Result
+- [ ] Batch concepts
+- [ ] Batch scheduling
+- [ ] Batch chains
+- [ ] Dependencies
+- [ ] Batch parameters
+- [ ] Batch execution
+- [ ] Batch monitoring
+- [ ] Batch logs
+- [ ] Failed batch
+- [ ] Restart
+- [ ] Recovery
+- [ ] Rerun
+- [ ] Batch reconciliation
 
-## Project 6 — End-to-End Automation
+---
 
-External Input
+# 22 — Workflow
+
+- [ ] Workflow concepts
+- [ ] Workflow states
+- [ ] Workflow transitions
+- [ ] Workflow events
+- [ ] Workflow rules
+- [ ] Approval workflow
+- [ ] Exception workflow
+- [ ] Trade workflow
+- [ ] Workflow troubleshooting
+
+---
+
+# 23 — Murex Events
+
+- [ ] Event concepts
+- [ ] Trade events
+- [ ] Lifecycle events
+- [ ] Settlement events
+- [ ] Accounting events
+- [ ] Risk events
+- [ ] Event processing
+- [ ] Event dependencies
+- [ ] Event failure
+- [ ] Event troubleshooting
+
+---
+
+# PART F — MUREX INTEGRATION
+
+# 24 — Integration Fundamentals
+
+- [ ] Integration concepts
+- [ ] Inbound interface
+- [ ] Outbound interface
+- [ ] Synchronous integration
+- [ ] Asynchronous integration
+- [ ] File-based integration
+- [ ] API integration
+- [ ] Messaging
+- [ ] Batch integration
+- [ ] Real-time integration
+
+---
+
+# 25 — XML Integration
+
+- [ ] XML fundamentals
+- [ ] XML structure
+- [ ] XML schema
+- [ ] XML validation
+- [ ] XML messages
+- [ ] XML transformation
+- [ ] XML inbound interface
+- [ ] XML outbound interface
+- [ ] XML error handling
+- [ ] XML troubleshooting
+
+---
+
+# 26 — MXML
+
+- [ ] MXML concepts
+- [ ] MXML structure
+- [ ] MXML messages
+- [ ] MXML integration
+- [ ] MXML request
+- [ ] MXML response
+- [ ] MXML validation
+- [ ] MXML processing
+- [ ] MXML errors
+- [ ] MXML troubleshooting
+- [ ] MXML interface design
+
+---
+
+# 27 — File-Based Integration
+
+- [ ] Input files
+- [ ] Output files
+- [ ] File naming
+- [ ] File format
+- [ ] File validation
+- [ ] File availability
+- [ ] File transfer
+- [ ] SFTP
+- [ ] File processing
+- [ ] Archive
+- [ ] Error directory
+- [ ] Duplicate handling
+- [ ] Reprocessing
+- [ ] Reconciliation
+
+---
+
+# 28 — API Integration
+
+- [ ] API concepts
+- [ ] REST
+- [ ] HTTP
+- [ ] JSON
+- [ ] Authentication
+- [ ] Request
+- [ ] Response
+- [ ] Error handling
+- [ ] Timeout
+- [ ] Retry
+- [ ] Integration monitoring
+
+---
+
+# 29 — Messaging
+
+- [ ] Messaging concepts
+- [ ] Producer
+- [ ] Consumer
+- [ ] Queue
+- [ ] Message
+- [ ] Asynchronous processing
+- [ ] Message failure
+- [ ] Retry
+- [ ] Duplicate messages
+- [ ] Message monitoring
+
+---
+
+# PART G — UNIX / SHELL / PYTHON WITH MUREX
+
+# 30 — Unix and Murex
+
+- [ ] Linux server concepts
+- [ ] Murex application processes
+- [ ] Process monitoring
+- [ ] Log analysis
+- [ ] File management
+- [ ] Permissions
+- [ ] Environment variables
+- [ ] Shell commands
+- [ ] Batch monitoring
+- [ ] Production troubleshooting
+
+---
+
+# 31 — Shell Scripting and Murex
+
+- [ ] Controller scripts
+- [ ] Batch scripts
+- [ ] Job execution
+- [ ] Exit codes
+- [ ] Error handling
+- [ ] Logging
+- [ ] File validation
+- [ ] Process validation
+- [ ] Database validation
+- [ ] Retry
+- [ ] Recovery
+- [ ] Restart automation
+
+---
+
+# 32 — Python and Murex
+
+- [ ] Python integration concepts
+- [ ] File processing
+- [ ] XML processing
+- [ ] JSON processing
+- [ ] Oracle connectivity
+- [ ] API integration
+- [ ] Log analysis
+- [ ] Reconciliation
+- [ ] Validation utilities
+- [ ] Automation utilities
+- [ ] Production support utilities
+
+---
+
+# PART H — PRODUCTION SUPPORT
+
+# 33 — Murex Production Support
+
+- [ ] Incident management
+- [ ] Severity
+- [ ] Priority
+- [ ] Incident triage
+- [ ] Log analysis
+- [ ] Batch monitoring
+- [ ] Interface monitoring
+- [ ] Trade investigation
+- [ ] Database investigation
+- [ ] Network investigation
+- [ ] Application investigation
+- [ ] Root cause analysis
+- [ ] Workaround
+- [ ] Permanent fix
+- [ ] Recovery
+- [ ] Reconciliation
+- [ ] Incident documentation
+
+---
+
+# 34 — Batch Failure Troubleshooting
+
+- [ ] Identify failed batch
+- [ ] Check batch status
+- [ ] Check logs
+- [ ] Check parameters
+- [ ] Check dependencies
+- [ ] Check database
+- [ ] Check filesystem
+- [ ] Check network
+- [ ] Check input files
+- [ ] Identify failure point
+- [ ] Correct issue
+- [ ] Restart
+- [ ] Validate output
+- [ ] Reconcile results
+
+---
+
+# 35 — Interface Failure Troubleshooting
+
+- [ ] Interface not triggered
+- [ ] File not received
+- [ ] File incomplete
+- [ ] Invalid message
+- [ ] XML validation failure
+- [ ] MXML failure
+- [ ] Network failure
+- [ ] SFTP failure
+- [ ] Database failure
+- [ ] Processing failure
+- [ ] Output not generated
+- [ ] Duplicate message
+- [ ] Reprocessing
+- [ ] Reconciliation
+
+---
+
+# 36 — Trade Troubleshooting
+
+- [ ] Trade not captured
+- [ ] Trade validation failure
+- [ ] Incorrect static data
+- [ ] Incorrect market data
+- [ ] Incorrect counterparty
+- [ ] Incorrect book
+- [ ] Incorrect valuation
+- [ ] Incorrect P&L
+- [ ] Settlement failure
+- [ ] Accounting issue
+- [ ] Risk issue
+- [ ] Interface issue
+- [ ] Trade reconciliation
+
+---
+
+# PART I — CONFIGURATION CONCEPTS
+
+# 37 — Murex Configuration Concepts
+
+- [ ] Static data configuration
+- [ ] Product configuration
+- [ ] Book configuration
+- [ ] Portfolio configuration
+- [ ] Counterparty configuration
+- [ ] Market data configuration
+- [ ] Workflow configuration
+- [ ] Event configuration
+- [ ] Accounting configuration
+- [ ] Settlement configuration
+- [ ] Interface configuration
+- [ ] Batch configuration
+- [ ] Reporting configuration
+
+---
+
+# 38 — Environment and Release Management
+
+- [ ] Configuration migration
+- [ ] Development
+- [ ] SIT
+- [ ] UAT
+- [ ] Production
+- [ ] Release management
+- [ ] Deployment
+- [ ] Rollback
+- [ ] Version control
+- [ ] Change management
+- [ ] Production validation
+
+---
+
+# PART J — REPORTING AND RECONCILIATION
+
+# 39 — Reporting
+
+- [ ] Operational reports
+- [ ] Trade reports
+- [ ] Position reports
+- [ ] P&L reports
+- [ ] Risk reports
+- [ ] Accounting reports
+- [ ] Settlement reports
+- [ ] Regulatory reporting concepts
+- [ ] Report validation
+- [ ] Report reconciliation
+
+---
+
+# 40 — Reconciliation
+
+- [ ] Trade reconciliation
+- [ ] Position reconciliation
+- [ ] Cash reconciliation
+- [ ] Settlement reconciliation
+- [ ] Accounting reconciliation
+- [ ] Interface reconciliation
+- [ ] Source vs target
+- [ ] Missing records
+- [ ] Duplicate records
+- [ ] Amount mismatch
+- [ ] Date mismatch
+- [ ] Root-cause analysis
+
+---
+
+# PART K — TECHNO-FUNCTIONAL SCENARIOS
+
+# 41 — End-to-End Scenario 1
+
+Trade Capture
+→ Validation
+→ Enrichment
+→ Market Data
+→ Valuation
+→ Risk
+→ P&L
+→ Confirmation
+→ Settlement
+→ Accounting
+→ Reporting
+
+- [ ] Understand business flow
+- [ ] Identify Murex components
+- [ ] Identify technical dependencies
+- [ ] Identify database dependencies
+- [ ] Identify interfaces
+- [ ] Identify batch processing
+- [ ] Identify troubleshooting points
+
+---
+
+# 42 — End-to-End Scenario 2
+
+External System
+→ SFTP
 → Linux
 → Shell Controller
 → Python
+→ MXML
+→ Murex
 → Oracle
-→ Transformation
+→ Processing
 → Output
-→ Logging
 → Archive
-→ Error Handling
-→ Recovery
+→ Reconciliation
+
+- [ ] Requirement
+- [ ] Interface design
+- [ ] File validation
+- [ ] MXML construction
+- [ ] Processing
+- [ ] Error handling
+- [ ] Logging
+- [ ] Recovery
+- [ ] Reconciliation
+
+---
+
+# 43 — Interview Preparation
+
+## Functional Questions
+
+- [ ] Trade lifecycle
+- [ ] FX
+- [ ] Interest rates
+- [ ] Derivatives
+- [ ] Market data
+- [ ] Static data
+- [ ] Risk
+- [ ] P&L
+- [ ] Settlement
+- [ ] Accounting
+- [ ] Reconciliation
+
+## Technical Questions
+
+- [ ] Murex architecture
+- [ ] Oracle
+- [ ] Datamart
+- [ ] Batch
+- [ ] Workflow
+- [ ] Events
+- [ ] Interfaces
+- [ ] XML
+- [ ] MXML
+- [ ] Linux
+- [ ] Shell scripting
+- [ ] Python
+- [ ] SFTP
+- [ ] Networking
+
+## Scenario Questions
+
+- [ ] Trade failed
+- [ ] Trade not visible
+- [ ] Incorrect P&L
+- [ ] Incorrect risk
+- [ ] Market data missing
+- [ ] Batch failed
+- [ ] Interface failed
+- [ ] MXML rejected
+- [ ] File missing
+- [ ] SFTP failed
+- [ ] Database unavailable
+- [ ] Settlement failed
+- [ ] Accounting mismatch
+- [ ] Reconciliation mismatch
+- [ ] Production incident
+
+---
+
+# 44 — Practical Labs
+
+## Lab 01 — Trade Lifecycle
+
+Trade
+→ Validation
+→ Enrichment
+→ Risk
+→ P&L
+→ Settlement
+→ Accounting
+
+- [ ] Document the flow
+- [ ] Identify each component
+- [ ] Identify dependencies
+- [ ] Create troubleshooting scenarios
+
+---
+
+## Lab 02 — MXML Integration
+
+External Input
+→ XML/MXML
+→ Validation
+→ Murex Interface
+→ Processing
+→ Response
+→ Logging
+
+- [ ] Design message
+- [ ] Validate message
+- [ ] Process success case
+- [ ] Process failure case
+- [ ] Reprocess
+
+---
+
+## Lab 03 — Linux + Python + Oracle
+
+Shell Controller
+→ Python
+→ Oracle
+→ Validation
+→ Output
+
+- [ ] Shell script
+- [ ] Python program
+- [ ] Oracle tables
+- [ ] SQL
+- [ ] Logging
+- [ ] Error handling
+- [ ] Exit codes
+
+---
+
+## Lab 04 — Complete Integration Lab
+
+External System
+        ↓
+     SFTP
+        ↓
+     Linux
+        ↓
+ Shell Controller
+        ↓
+     Python
+        ↓
+     MXML
+        ↓
+      Murex
+        ↓
+     Oracle
+        ↓
+ Risk / P&L
+        ↓
+ Settlement
+        ↓
+ Accounting
+        ↓
+ Reporting
+        ↓
+ Reconciliation
+
+- [ ] Requirement
+- [ ] Architecture
+- [ ] Database design
+- [ ] Interface design
+- [ ] Python implementation
+- [ ] Shell implementation
+- [ ] MXML
+- [ ] Logging
+- [ ] Error handling
+- [ ] Recovery
+- [ ] Reconciliation
+- [ ] Production support scenarios
 
 ---
 
 # Completion Criteria
 
-A topic is considered COMPLETE only when:
+A topic is COMPLETE only when:
 
 - [ ] Concept understood
+- [ ] Business meaning understood
+- [ ] Murex relevance understood
+- [ ] Technical dependency understood
+- [ ] Example discussed
+- [ ] Troubleshooting scenario understood
 - [ ] Notes prepared
-- [ ] Example written
-- [ ] Code executed
-- [ ] Practice completed
-- [ ] Negative scenario tested
-- [ ] Coding standards reviewed
 - [ ] Glossary updated
 - [ ] Interview questions answered
-- [ ] Git commit completed
+- [ ] Practical scenario completed
 
 ---
 
-# Daily Rule
+# Final Goal
 
-Do not simply mark a topic complete because it was read.
+Be able to explain:
 
-Use:
+> What happens to a trade from capture to settlement?
 
-> Learn → Code → Break → Debug → Refactor → Explain → Commit
+and then go one level deeper:
 
----
+> Which Murex functional component is involved?
 
-# Starting Point
+and then deeper:
 
-## Day 1
+> What technical component supports it?
 
-`01-fundamentals/01-python-overview.md`
+and finally:
 
-## Next
-
-`01-fundamentals/02-installation-and-environment.md`
-
-Then continue sequentially through the roadmap.
-
-# Goal
-
-Build the ability to:
-
-> Understand a requirement → design the solution → write clean Python → test it → run it on Linux → integrate with Oracle/APIs/files → troubleshoot failures → document it → explain it confidently in an interview.
+> If it fails in production, how would I investigate it using
+> Murex + Oracle + Linux + Shell + Python + Networking + Interfaces?

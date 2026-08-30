@@ -1,77 +1,482 @@
-🐍 Python 50 Days — Day 01
+🐍 Python 50 Days — Chapter 01: Python Fundamentals
 
-Python Fundamentals
+> Learning Approach: Concept → Notes → Example → Coding Practice → Real-World Scenario → Interview Questions → Review
 
----
 
-🎯 Agenda
 
-Today we will understand:
-
-1. What is Python?
-2. Python applications
-3. Variables
-4. Data types
-5. Dynamic typing
-6. Static typing
-7. "print()"
-8. "input()"
-9. Type conversion
-10. Arithmetic operators
-11. Comparison operators
-12. Logical operators
-13. "if / elif / else"
-14. Compiler vs Interpreter
-15. How Python executes code
 
 ---
 
-1. What is Python?
+📋 Agenda
 
-Python is a high-level, general-purpose programming language known for its simple syntax and readability.
+[ ] Python Overview
 
-Why Python is popular
+[ ] Python Interpreter
 
-- Easy to learn
-- Easy to read and maintain
-- Large standard library
-- Huge ecosystem of third-party libraries
-- Useful for automation and scripting
-- Strong support for data processing
-- Widely used in DevOps, testing, APIs and ETL
-- Used extensively in data science and AI
+[ ] Python Execution Model
 
-Python applications
+[ ] Python Versions
+
+[ ] Python Installation
+
+[ ] Python Environment
+
+[ ] Interactive Interpreter
+
+[ ] .py Files
+
+[ ] Python Syntax
+
+[ ] Indentation
+
+[ ] Comments
+
+[ ] Variables
+
+[ ] Naming Conventions
+
+[ ] Constants
+
+[ ] Keywords
+
+[ ] Identifiers
+
+[ ] Literals
+
+[ ] Dynamic Typing
+
+[ ] Strong Typing
+
+[ ] Built-in Data Types
+
+[ ] Type Checking
+
+[ ] Type Conversion
+
+[ ] Input
+
+[ ] Output
+
+[ ] print()
+
+[ ] input()
+
+
+
+---
+
+1. 🐍 Python Overview
+
+Python is a high-level, general-purpose programming language.
+
+Python is known for:
+
+Simple and readable syntax
+
+Easy learning curve
+
+Large standard library
+
+Huge third-party ecosystem
+
+Cross-platform support
+
+Automation capabilities
+
+Data processing capabilities
+
+Strong support for APIs and databases
+
+Usage in DevOps, testing, ETL, Data Science and AI
+
+
+Common Python Applications
 
 Automation
 Data Processing
 ETL
-Data Analysis
 API Development
 Testing
 DevOps
-Financial Applications
+Data Analysis
+Data Science
 Machine Learning
+Financial Applications
+
+Python Characteristics
+
+High-Level
+General-Purpose
+Dynamically Typed
+Strongly Typed
+Object-Oriented
+Interpreted/Runtime-Based
+
 
 ---
 
-2. Python Program — First Example
+2. 🔧 Python Interpreter
 
-print("Hello World")
-
-"print()" is used to display information on the screen.
+A Python interpreter/runtime is the software environment that executes Python programs.
 
 Example:
 
-print("Welcome to Python")
-print(100)
-print(10.5)
+print("Hello Python")
+
+The Python implementation processes the program and produces:
+
+Hello Python
+
+CPython
+
+CPython is the standard and most widely used Python implementation.
+
 
 ---
 
-3. Variables
+3. ⚙️ Python Execution Model
 
-A variable is a name that refers to a value/object.
+It is common to say:
+
+> Python is an interpreted language.
+
+
+
+However, this is an oversimplification.
+
+With CPython, the basic execution flow is:
+
+Python Source Code
+        ↓
+   Compilation
+        ↓
+     Bytecode
+        ↓
+Python Virtual Machine
+        ↓
+    Execution
+
+For example:
+
+print("Hello")
+
+The .py source code is processed by CPython, compiled to bytecode, and that bytecode is executed by the Python runtime.
+
+Important Interview Point
+
+❌ Incorrect:
+
+Python has no compiler.
+
+✅ Better:
+
+CPython compiles Python source code into bytecode,
+and the Python Virtual Machine executes that bytecode.
+
+
+---
+
+4. 🐍 Python Versions
+
+Python has had multiple versions.
+
+Historically:
+
+Python 2
+Python 3
+
+Python 2 is obsolete and unsupported.
+
+Modern Python development uses:
+
+Python 3.x
+
+Examples of Python 3 releases include:
+
+Python 3.8
+Python 3.9
+Python 3.10
+Python 3.11
+Python 3.12
+Python 3.13
+Python 3.14
+
+The version used for a project depends on project requirements and compatibility.
+
+Check Python Version
+
+python --version
+
+or:
+
+python3 --version
+
+Inside Python:
+
+import sys
+
+print(sys.version)
+
+
+---
+
+5. 💻 Python Installation
+
+Python needs to be installed before we can execute Python programs locally.
+
+After installation, verify it:
+
+python --version
+
+or:
+
+python3 --version
+
+Example
+
+Python 3.x.x
+
+The exact version depends on the installed Python release.
+
+
+---
+
+6. 🌍 Python Environment
+
+A Python environment is the setup in which Python programs run.
+
+It can contain:
+
+Python Interpreter
+Libraries
+Packages
+Project Dependencies
+Environment Variables
+
+Why environments are important
+
+Different projects may require different versions of packages.
+
+Example:
+
+Project A
+    ↓
+pandas version A
+
+Project B
+    ↓
+pandas version B
+
+Installing everything globally can create dependency conflicts.
+
+Virtual Environment
+
+Python provides virtual environments to isolate project dependencies.
+
+Example:
+
+python -m venv myenv
+
+Conceptually:
+
+System Python
+     │
+     ├── Project A Environment
+     │
+     └── Project B Environment
+
+> Virtual environments isolate project-specific dependencies.
+
+
+
+We will study virtual environments in more detail later.
+
+
+---
+
+7. 💻 Interactive Interpreter
+
+Python can be used interactively from a terminal.
+
+Start Python:
+
+python
+
+You may see:
+
+>>>
+
+The >>> is the Python prompt.
+
+Now we can execute code directly:
+
+>>> 10 + 20
+30
+
+Another example:
+
+>>> name = "Veera"
+>>> print(name)
+Veera
+
+Uses
+
+The interactive interpreter is useful for:
+
+Learning Python
+
+Testing small pieces of code
+
+Experimenting
+
+Quickly checking Python behavior
+
+
+Interactive vs Script
+
+Interactive:
+
+>>> 10 + 20
+30
+
+Script:
+
+program.py
+    ↓
+Python
+    ↓
+Output
+
+
+---
+
+8. 📄 .py Files
+
+Python source files normally use the:
+
+.py
+
+extension.
+
+Example:
+
+hello.py
+
+Contents:
+
+print("Hello World")
+
+Run it:
+
+python hello.py
+
+Remember
+
+.py → Python source code file
+
+
+---
+
+9. 📝 Python Syntax
+
+Syntax means the rules for writing valid Python code.
+
+Example:
+
+name = "Veera"
+print(name)
+
+This follows Python syntax.
+
+Example of invalid syntax
+
+if salary >= 100000
+    print("Eligible")
+
+The : is missing.
+
+Correct:
+
+if salary >= 100000:
+    print("Eligible")
+
+Remember
+
+> Syntax = rules/grammar of the programming language.
+
+
+
+
+---
+
+10. 📐 Indentation
+
+Indentation means spaces at the beginning of a line.
+
+Python uses indentation to define blocks of code.
+
+Example:
+
+if salary >= 100000:
+    print("Eligible")
+
+The print() statement belongs to the if block because it is indented.
+
+Multiple statements:
+
+if salary >= 100000:
+    print("Eligible")
+    print("Process loan")
+
+Recommended Practice
+
+Use 4 spaces for indentation.
+
+if condition:
+    statement
+
+Incorrect
+
+if condition:
+print("Hello")
+
+Important
+
+Python uses indentation instead of {} to define code blocks.
+
+
+---
+
+11. 💬 Comments
+
+Comments are notes written for humans.
+
+Python ignores comments during normal execution.
+
+Single-Line Comment
+
+Use #:
+
+# Calculate monthly salary
+salary = 140000
+
+Inline comment:
+
+salary = 140000  # Monthly salary
+
+Good Comment
+
+# Calculate remaining salary after fixed monthly expenses
+remaining_salary = salary - expenses
+
+Comments should explain useful information rather than obvious code.
+
+
+---
+
+12. 📦 Variables
+
+A variable is a name that refers to an object/value.
 
 Example:
 
@@ -87,133 +492,232 @@ salary → 140000
 
 Python does not normally require explicit type declaration.
 
+Example:
+
 salary = 140000
 
-We don't need to write:
+Python determines the type from the object assigned to the name.
 
-int salary = 140000
-
-This is one reason Python is considered dynamically typed.
 
 ---
 
-4. Variable Naming Rules
+13. ✏️ Naming Conventions
 
-Valid examples:
+Naming conventions make code easier to read and maintain.
 
-salary = 140000
-employee_name = "Veera"
-loan_amount = 500000
-salary1 = 150000
+Variables and Functions
 
-Invalid:
-
-1salary = 140000
-
-A variable name cannot start with a number.
-
-Also:
-
-employee-name = "Veera"
-
-should not be used because "-" represents subtraction.
-
-Recommended practice
-
-Use meaningful names:
+Use snake_case:
 
 monthly_salary = 140000
+employee_name = "Veera"
 loan_amount = 500000
-credit_score = 780
 
-rather than:
+Classes
 
-x = 140000
-a = 500000
-b = 780
+Use PascalCase:
 
----
+class EmployeeDetails:
+    pass
 
-5. Basic Python Data Types
+Constants
 
-A data type tells us what kind of value we are working with.
+Use UPPER_SNAKE_CASE:
 
-Data Type| Example| Description
-"int"| "100"| Whole number
-"float"| "10.5"| Decimal number
-"str"| ""Python""| Text
-"bool"| "True" / "False"| Boolean value
+MAX_RETRY_COUNT = 3
+INTEREST_RATE = 8.5
 
-Integer
+Important
 
-age = 35
+Naming conventions are conventions. Python does not automatically enforce them.
 
-Type:
-
-int
-
-Float
-
-interest_rate = 8.5
-
-Type:
-
-float
-
-String
-
-name = "Veera"
-
-Type:
-
-str
-
-Boolean
-
-loan_approved = True
-
-Type:
-
-bool
 
 ---
 
-6. Checking Data Type
+14. 🔒 Constants
 
-Python provides the "type()" function.
+A constant is a value intended not to change during program execution.
 
-salary = 140000
+Python does not have a general const keyword for variables.
 
-print(type(salary))
-
-Output:
-
-<class 'int'>
+Instead, programmers use uppercase names by convention.
 
 Example:
 
-interest_rate = 8.5
-print(type(interest_rate))
+MAX_RETRY_COUNT = 3
+INTEREST_RATE = 8.5
 
-Output:
+This communicates:
 
-<class 'float'>
+> "This value is intended to remain constant."
+
+
+
+However, Python does not prevent reassignment:
+
+MAX_RETRY_COUNT = 3
+
+MAX_RETRY_COUNT = 5
+
+Therefore:
+
+> Python constants are mainly enforced by convention, not by a language-level const declaration.
+
+
+
 
 ---
 
-7. Dynamic Typing
+15. 🔑 Keywords
+
+Keywords are reserved words with special meaning in Python.
+
+Examples:
+
+if
+else
+elif
+for
+while
+def
+class
+return
+import
+try
+except
+True
+False
+None
+and
+or
+not
+in
+is
+
+A keyword cannot normally be used as a variable name.
+
+Invalid:
+
+if = 10
+
+View Python Keywords
+
+import keyword
+
+print(keyword.kwlist)
+
+
+---
+
+16. 🏷️ Identifiers
+
+An identifier is a name used to identify something in Python.
+
+Example:
+
+salary = 140000
+
+Here:
+
+salary → identifier
+140000 → literal
+
+Identifiers can represent names of:
+
+Variables
+
+Functions
+
+Classes
+
+Modules
+
+Other program elements
+
+
+Valid Identifiers
+
+salary
+employee_name
+loan_amount1
+_private_value
+
+Invalid Identifiers
+
+1salary
+employee-name
+
+Keywords cannot be used as identifiers:
+
+class = 10
+
+is invalid.
+
+
+---
+
+17. 🔢 Literals
+
+A literal is a value written directly in source code.
+
+Examples:
+
+100
+10.5
+3 + 4j
+"Hello"
+True
+None
+
+Example:
+
+age = 35
+
+Here:
+
+age → identifier
+35  → integer literal
+
+Another:
+
+name = "Veera"
+
+Here:
+
+name    → identifier
+"Veera" → string literal
+
+Common Literal Types
+
+Integer Literal
+Float Literal
+Complex Literal
+String Literal
+Boolean Literal
+None Literal
+
+
+---
+
+18. 🔄 Dynamic Typing
 
 Python is a dynamically typed language.
 
-This means we don't normally declare a variable's type explicitly, and type checking occurs during program execution.
+We don't normally need to declare a variable's type explicitly.
 
 Example:
 
 x = 100
 
+Python knows that the object 100 is an integer.
+
+Later:
+
 x = "Hello"
 
-The name "x" can be rebound to an object of another type.
+Now the name x refers to a string object.
+
+Example:
 
 x = 100
 print(type(x))
@@ -226,87 +730,415 @@ Output:
 <class 'int'>
 <class 'str'>
 
-Remember
+Important
 
-«Dynamic typing → type checking mainly happens at runtime.»
+Dynamic typing means:
 
-Python still has types. It simply doesn't require us to explicitly declare the type of every variable.
+Type information is associated with objects.
 
----
+Type checking occurs during runtime.
 
-8. Static Typing
+A variable name can be rebound to an object of another type.
 
-In a statically typed language, types are generally known and checked at compile time.
 
-Example in Java:
+Easy Reminder
 
-int salary = 140000;
+Dynamic Typing
+       ↓
+Types are determined/checked at runtime
 
-Here "salary" is declared as an integer.
-
-This is not valid:
-
-int salary = 140000;
-salary = "Hello";
-
-because a string cannot be assigned to an integer variable.
-
-Remember
-
-«Static typing → type checking mainly happens at compile time.»
 
 ---
 
-9. Static vs Dynamic Typing
+19. 💪 Strong Typing
 
-Feature| Static Typing| Dynamic Typing
-Type checking| Mainly compile time| Mainly runtime
-Explicit type declaration| Common| Usually not required
-Variable can refer to different types| Generally restricted| Yes
-Examples| Java, C, C++| Python, JavaScript
+Python is also considered a strongly typed language.
 
-Easy memory trick
-
-STATIC  → Check type before running
-DYNAMIC → Check type while running
-
----
-
-10. "input()"
-
-"input()" is used to receive input from the user.
+Strong typing means Python generally does not automatically perform arbitrary conversions between incompatible types.
 
 Example:
 
-name = input("Enter your name: ")
+x = 10
+y = "20"
 
-print(name)
+print(x + y)
 
-Important
+This produces:
 
-"input()" always returns a string.
+TypeError
 
-For example:
+Python does not automatically convert "20" to 20 for this operation.
 
-age = input("Enter your age: ")
+We need explicit conversion:
 
-If the user enters:
+x = 10
+y = "20"
 
-35
+print(x + int(y))
 
-Python initially receives:
+Output:
 
-"35"
+30
 
-not:
+Dynamic vs Strong Typing
 
-35
+These are two different concepts.
+
+Dynamic Typing
+      ↓
+How/when type information is determined and checked
+
+Strong Typing
+      ↓
+How strictly incompatible types are handled
+
+Python is:
+
+Dynamic + Strongly Typed
+
 
 ---
 
-11. Type Conversion
+20. 🧱 Built-in Data Types
 
-We can convert one type into another.
+Important built-in types in this chapter:
+
+int
+float
+complex
+bool
+str
+NoneType
+
+
+---
+
+21. 🔢 int
+
+int represents whole numbers.
+
+Examples:
+
+age = 35
+salary = 140000
+quantity = -10
+
+Check the type:
+
+x = 100
+
+print(type(x))
+
+Output:
+
+<class 'int'>
+
+Python integers can represent arbitrarily large whole numbers, subject mainly to available memory.
+
+
+---
+
+22. 🔢 float
+
+float represents floating-point numbers.
+
+Examples:
+
+interest_rate = 8.5
+price = 125.75
+
+Example:
+
+x = 10.5
+
+print(type(x))
+
+Output:
+
+<class 'float'>
+
+Financial Note
+
+Binary floating-point numbers can have precision limitations.
+
+For financial calculations, Python also provides:
+
+decimal.Decimal
+
+We will study this later.
+
+
+---
+
+23. 🧮 complex
+
+Python supports complex numbers.
+
+A complex number contains:
+
+Real Part + Imaginary Part
+
+Example:
+
+x = 3 + 4j
+
+Here:
+
+3 → Real part
+4j → Imaginary part
+
+Check:
+
+print(type(x))
+
+Output:
+
+<class 'complex'>
+
+Access the parts:
+
+print(x.real)
+print(x.imag)
+
+Output:
+
+3.0
+4.0
+
+
+---
+
+24. ✅ bool
+
+bool represents Boolean values.
+
+There are two Boolean values:
+
+True
+False
+
+Example:
+
+loan_approved = True
+is_active = False
+
+Check:
+
+print(type(loan_approved))
+
+Output:
+
+<class 'bool'>
+
+Booleans are commonly used in conditions.
+
+if loan_approved:
+    print("Process Loan")
+
+
+---
+
+25. 🔤 str
+
+str represents text.
+
+Examples:
+
+name = "Veera"
+city = "Hyderabad"
+
+Strings can use either single or double quotes:
+
+"Hello"
+'Hello'
+
+Example:
+
+message = "Welcome to Python"
+
+print(type(message))
+
+Output:
+
+<class 'str'>
+
+Strings are extremely important for:
+
+Files
+
+CSV
+
+JSON
+
+APIs
+
+Database data
+
+Logs
+
+Murex data
+
+
+
+---
+
+26. 🚫 None
+
+None represents the absence of a value.
+
+Example:
+
+result = None
+
+Check its type:
+
+print(type(result))
+
+Output:
+
+<class 'NoneType'>
+
+Important
+
+None is different from:
+
+0
+""
+False
+
+None represents the absence of a value.
+
+
+---
+
+27. 📊 Built-in Data Types — Quick Table
+
+Type	Example	Purpose
+
+int	100	Whole numbers
+float	10.5	Floating-point numbers
+complex	3 + 4j	Complex numbers
+bool	True	Boolean values
+str	"Python"	Text
+NoneType	None	Absence of value
+
+
+
+---
+
+28. 🔍 Type Checking
+
+Type checking means determining or checking the type of an object.
+
+Python provides:
+
+type()
+
+and:
+
+isinstance()
+
+
+---
+
+29. type()
+
+type() returns the type of an object.
+
+Example:
+
+salary = 140000
+
+print(type(salary))
+
+Output:
+
+<class 'int'>
+
+More examples:
+
+print(type(10))
+print(type(10.5))
+print(type("Hello"))
+print(type(True))
+print(type(None))
+
+
+---
+
+30. isinstance()
+
+isinstance() checks whether an object is an instance of a specified type/class.
+
+Example:
+
+salary = 140000
+
+print(isinstance(salary, int))
+
+Output:
+
+True
+
+Another:
+
+name = "Veera"
+
+print(isinstance(name, str))
+
+Output:
+
+True
+
+Wrong type:
+
+salary = 140000
+
+print(isinstance(salary, str))
+
+Output:
+
+False
+
+
+---
+
+31. type() vs isinstance()
+
+type()
+
+Tells us the object's exact type.
+
+x = 10
+
+print(type(x))
+
+isinstance()
+
+Checks whether the object is an instance of a specified type/class.
+
+x = 10
+
+print(isinstance(x, int))
+
+Quick Difference
+
+type()
+  ↓
+"What is the object's type?"
+
+isinstance()
+  ↓
+"Is this object an instance of this type/class?"
+
+In real Python code, isinstance() is often preferred for type checks because it also works naturally with class inheritance.
+
+
+---
+
+32. 🔄 Type Conversion
+
+Type conversion means converting a value from one type to another.
 
 Common functions:
 
@@ -315,466 +1147,583 @@ float()
 str()
 bool()
 
-Example:
 
-age = int(input("Enter your age: "))
+---
 
-Now "age" is an integer.
+Integer → Float
 
-Another example:
+x = 10
 
-salary = float(input("Enter salary: "))
+y = float(x)
 
-Example
-
-salary = "140000"
-
-salary = int(salary)
-
-print(salary + 10000)
+print(y)
 
 Output:
 
-150000
+10.0
+
 
 ---
 
-12. Arithmetic Operators
+Integer → String
 
-Python supports normal mathematical operations.
+x = 100
 
-Operator| Meaning| Example
-"+"| Addition| "10 + 5"
-"-"| Subtraction| "10 - 5"
-"*"| Multiplication| "10 * 5"
-"/"| Division| "10 / 5"
-"%"| Remainder| "10 % 3"
-"//"| Floor division| "10 // 3"
-"**"| Power| "10 ** 2"
+y = str(x)
 
-Example:
-
-a = 10
-b = 3
-
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a % b)
-print(a // b)
-print(a ** b)
-
----
-
-13. Comparison Operators
-
-Comparison operators compare values and return:
-
-True
-False
-
-Operator| Meaning
-">"| Greater than
-"<"| Less than
-">="| Greater than or equal
-"<="| Less than or equal
-"=="| Equal to
-"!="| Not equal to
-
-Example:
-
-salary = 140000
-
-print(salary > 100000)
-print(salary == 140000)
-print(salary != 50000)
-
----
-
-14. "=" vs "=="
-
-This is extremely important.
-
-"="
-
-Used for assignment.
-
-salary = 140000
-
-Meaning:
-
-«Assign "140000" to "salary".»
-
-"=="
-
-Used for comparison.
-
-salary == 140000
-
-Meaning:
-
-«Check whether salary is equal to "140000".»
-
-Example:
-
-salary = 140000
-
-print(salary == 140000)
+print(y)
+print(type(y))
 
 Output:
 
-True
+100
+<class 'str'>
+
 
 ---
 
-15. Logical Operators
+String → Integer
 
-Python provides:
+x = "100"
 
-and
-or
-not
+y = int(x)
 
-"and"
-
-Both conditions must be true.
-
-salary = 140000
-experience = 6
-
-print(salary >= 100000 and experience >= 5)
-
-Result:
-
-True
-
----
-
-"or"
-
-At least one condition must be true.
-
-salary = 80000
-experience = 6
-
-print(salary >= 100000 or experience >= 5)
-
-Result:
-
-True
-
----
-
-"not"
-
-Reverses a Boolean result.
-
-loan_approved = True
-
-print(not loan_approved)
-
-Result:
-
-False
-
----
-
-16. "if" Statement
-
-An "if" statement is used to make a decision.
-
-Example:
-
-salary = 140000
-
-if salary >= 100000:
-    print("Eligible")
-
-If the condition is "True", the indented code executes.
-
-Important
-
-Python uses indentation to define a block.
-
-if salary >= 100000:
-    print("Eligible")
-
-The ":" and indentation are important.
-
----
-
-17. "if / else"
-
-Used when there are two possible outcomes.
-
-salary = 80000
-
-if salary >= 100000:
-    print("Eligible")
-else:
-    print("Not Eligible")
+print(y + 50)
 
 Output:
 
-Not Eligible
+150
+
+The string must contain a valid integer representation.
+
 
 ---
 
-18. "if / elif / else"
+String → Float
 
-Used when there are multiple conditions.
+x = "10.5"
 
-salary = 140000
+y = float(x)
 
-if salary >= 150000:
-    print("High Income")
-elif salary >= 100000:
-    print("Medium Income")
-else:
-    print("Lower Income")
+print(y)
 
 Output:
 
-Medium Income
+10.5
 
-Python checks the conditions from top to bottom.
-
----
-
-19. Nested "if"
-
-An "if" statement can exist inside another "if".
-
-Example:
-
-salary = 140000
-credit_score = 780
-
-if salary >= 100000:
-    if credit_score >= 750:
-        print("Loan Eligible")
-
-The second condition is checked only when the first condition is true.
 
 ---
 
-20. Banking Example
+33. 📥 Input
 
-salary = 140000
-rent = 16500
-emi = 53713
-other_emi = 17550
-
-total_expenses = rent + emi + other_emi
-remaining_salary = salary - total_expenses
-
-print("Total Expenses:", total_expenses)
-print("Remaining Salary:", remaining_salary)
-
-if remaining_salary >= 50000:
-    print("Comfortable")
-elif remaining_salary >= 30000:
-    print("Manageable")
-else:
-    print("Tight")
-
-Expected result:
-
-Total Expenses: 87763
-Remaining Salary: 52237
-Comfortable
-
-This combines:
-
-Variables
-+
-Arithmetic
-+
-Comparison
-+
-Conditions
-
----
-
-21. Comments
-
-Comments are used to explain code.
-
-# Monthly salary
-salary = 140000
-
-# Monthly EMI
-emi = 53713
-
-Python ignores comments during execution.
-
----
-
-22. Compiler
-
-A compiler translates source code into another executable form, typically before execution.
-
-Conceptually:
-
-Source Code
-     ↓
-Compiler
-     ↓
-Machine / Executable Code
-     ↓
-CPU
-     ↓
-Result
-
-Languages such as C are commonly described as compiled languages.
-
----
-
-23. Interpreter
-
-An interpreter/runtime executes program instructions through a runtime system rather than relying solely on a traditional ahead-of-time native executable.
-
-Conceptually:
-
-Source Code
-     ↓
-Interpreter / Runtime
-     ↓
-Execution
-     ↓
-Result
-
----
-
-24. How Python Executes
-
-It is common to hear:
-
-«"Python is an interpreted language."»
-
-This is useful at a beginner level, but it is an oversimplification.
-
-With the standard CPython implementation:
-
-Python Source Code
-        ↓
-    Compilation
-        ↓
-     Bytecode
-        ↓
-Python Virtual Machine
-        ↓
-    Execution
-
-Therefore:
-
-«Python source code is compiled to bytecode and that bytecode is executed by the Python runtime.»
-
----
-
-25. Compiler vs Interpreter — Quick Comparison
-
-Compiler| Interpreter / Runtime
-Translation generally happens before execution| Execution happens through the runtime
-Often produces executable/native code| Executes instructions through a runtime
-Compilation errors can prevent execution| Errors can appear during execution
-C is a common example| Python is commonly described this way
-
-Important
-
-Do not memorize:
-
-Python = No Compiler
-
-Instead remember:
-
-CPython:
-Source → Bytecode → Python Virtual Machine → Execution
-
----
-
-⚡ QUICK REMINDER — DAY 01
-
-🧠 Core Concepts
-
-Python
-  ↓
-Variables
-  ↓
-Data Types
-  ↓
-Operators
-  ↓
-Conditions
-
-Variables
-
-name = "Veera"
-age = 35
-salary = 140000
-
-Data Types
-
-int
-float
-str
-bool
-
-Type
-
-type(value)
-
-Input
+Python uses:
 
 input()
 
-Remember:
+to receive input from the user.
 
-input() → string
+Example:
 
-Conversion
+name = input("Enter your name: ")
+
+print(name)
+
+If the user enters:
+
+Veera
+
+then:
+
+name
+
+contains:
+
+"Veera"
+
+⚠️ Very Important
+
+input() always returns a string.
+
+Example:
+
+age = input("Enter age: ")
+
+print(type(age))
+
+Even if the user enters:
+
+35
+
+the type is:
+
+str
+
+Therefore, if we need an integer:
+
+age = int(input("Enter age: "))
+
+
+---
+
+34. 📤 Output
+
+Output means displaying information produced by a program.
+
+Python commonly uses:
+
+print()
+
+Example:
+
+print("Hello World")
+
+Output:
+
+Hello World
+
+
+---
+
+35. print()
+
+print() displays values on the screen.
+
+Example:
+
+name = "Veera"
+salary = 140000
+
+print(name)
+print(salary)
+
+Multiple values:
+
+print("Name:", name, "Salary:", salary)
+
+Output:
+
+Name: Veera Salary: 140000
+
+
+---
+
+36. print() with f-Strings
+
+An f-string provides a convenient way to include variables inside text.
+
+Example:
+
+name = "Veera"
+salary = 140000
+
+print(f"Name: {name}")
+print(f"Salary: {salary}")
+
+Output:
+
+Name: Veera
+Salary: 140000
+
+We will study strings and formatting in greater detail later.
+
+
+---
+
+37. 🔄 Input → Conversion → Output
+
+Example:
+
+name = input("Enter employee name: ")
+salary = int(input("Enter monthly salary: "))
+
+print(f"Employee: {name}")
+print(f"Salary: {salary}")
+
+Flow:
+
+User
+  ↓
+input()
+  ↓
+String
+  ↓
+Type Conversion
+  ↓
+Required Data Type
+  ↓
+print()
+  ↓
+Output
+
+
+---
+
+38. 🏦 Real-World Example
+
+Consider a simple salary calculation:
+
+salary = 140000
+emi = 53713
+rent = 16500
+
+remaining_salary = salary - emi - rent
+
+print(f"Salary: {salary}")
+print(f"EMI: {emi}")
+print(f"Rent: {rent}")
+print(f"Remaining Salary: {remaining_salary}")
+
+Output:
+
+Salary: 140000
+EMI: 53713
+Rent: 16500
+Remaining Salary: 69787
+
+This example combines:
+
+Variables
+Data Types
+Arithmetic
+Strings
+Output
+
+These same fundamentals will later be used in much larger automation and data-processing programs.
+
+
+---
+
+🧠 Chapter 01 Concept Map
+
+PYTHON
+                            │
+        ┌───────────────────┼───────────────────┐
+        ↓                   ↓                   ↓
+      Syntax             Data Types          Execution
+        │                   │                   │
+   ┌────┼────┐        ┌─────┼──────┐           │
+   ↓    ↓    ↓        ↓     ↓      ↓           ↓
+Indent Comments   int/float str/bool None     Source
+ation              complex                      ↓
+                                              Bytecode
+                                                 ↓
+                                                PVM
+                                                 ↓
+                                             Execution
+
+
+---
+
+⚡ Quick Cheat Sheet
+
+Python
+
+High-Level
+General-Purpose
+Dynamic
+Strongly Typed
+
+Execution
+
+.py Source
+    ↓
+CPython
+    ↓
+Bytecode
+    ↓
+Python Virtual Machine
+    ↓
+Execution
+
+Basic Data Types
+
+int      → 100
+float    → 10.5
+complex  → 3 + 4j
+bool     → True / False
+str      → "Hello"
+None     → No value
+
+Type Checking
+
+type(x)
+
+→ Returns the object's type.
+
+isinstance(x, int)
+
+→ Checks whether x is an instance of int.
+
+Type Conversion
 
 int()
 float()
 str()
 bool()
 
+Input
+
+input()
+
+⚠️ Always returns str.
+
+Output
+
+print()
+
+→ Displays output.
+
+Naming
+
+variable_name  → snake_case
+ClassName      → PascalCase
+CONSTANT_NAME  → UPPER_SNAKE_CASE
+
+Keywords
+
+if
+else
+elif
+for
+while
+def
+class
+return
+import
+True
+False
+None
+and
+or
+not
+
 Assignment vs Comparison
 
 =   → Assignment
-==  → Comparison
+==  → Equality comparison
 
-Logical Operators
+Dynamic vs Strong Typing
 
-and → all required conditions must be True
-or  → at least one condition must be True
-not → reverses True/False
+Dynamic Typing
+→ Type checking/determination primarily at runtime
 
-Conditions
+Strong Typing
+→ Incompatible types are not freely mixed through
+  arbitrary implicit conversions
+
+Python:
+
+Dynamic + Strongly Typed
+
+Indentation
 
 if condition:
-    ...
+    statement
 
-elif condition:
-    ...
+Recommended:
 
-else:
-    ...
+4 spaces
 
-Typing
 
-Static  → type checked mainly at compile time
-Dynamic → type checked mainly at runtime
+---
 
-Python
+🎤 Interview Questions
 
-Dynamically Typed
+1. What is Python?
 
-CPython Execution
+Python is a high-level, general-purpose programming language known for its readable syntax and large ecosystem.
 
-Source
-  ↓
+
+---
+
+2. Is Python compiled or interpreted?
+
+A precise answer:
+
+> CPython compiles Python source code into bytecode, and the Python Virtual Machine executes that bytecode. Python is commonly described as interpreted because execution occurs through its runtime.
+
+
+
+
+---
+
+3. What is dynamic typing?
+
+Dynamic typing means Python does not require explicit type declarations for variables, and type checking occurs during runtime.
+
+
+---
+
+4. What is strong typing?
+
+Strong typing means Python generally does not automatically perform arbitrary conversions between incompatible types.
+
+
+---
+
+5. What is an identifier?
+
+An identifier is a name used to identify a variable, function, class or other program element.
+
+
+---
+
+6. What is a keyword?
+
+A keyword is a reserved word with a predefined meaning in Python.
+
+
+---
+
+7. What is a literal?
+
+A literal is a value written directly in source code.
+
+Examples:
+
+100
+10.5
+"Hello"
+True
+None
+
+
+---
+
+8. What does input() return?
+
+input() always returns a string.
+
+
+---
+
+9. What is the difference between type() and isinstance()?
+
+type()
+→ Returns the object's type.
+
+isinstance()
+→ Checks whether the object is an instance of
+  a specified type/class.
+
+
+---
+
+10. What is indentation in Python?
+
+Indentation is whitespace at the beginning of a line used to define blocks of code.
+
+
+---
+
+11. What is None?
+
+None is a special singleton object used to represent the absence of a value.
+
+Its type is:
+
+NoneType
+
+
+---
+
+12. Does Python have constants?
+
+Python does not provide a general const keyword for ordinary variables. Constants are usually represented using uppercase naming conventions.
+
+Example:
+
+MAX_RETRY_COUNT = 3
+
+
+---
+
+🏦 Real-World Connection
+
+The concepts in Chapter 01 are the foundation for our later Python learning:
+
+Python Fundamentals
+        ↓
+Variables & Data Types
+        ↓
+Operators & Expressions
+        ↓
+Control Flow
+        ↓
+Functions
+        ↓
+Data Structures
+        ↓
+Exception Handling
+        ↓
+File Handling
+        ↓
+OOP
+        ↓
+Modules & Packages
+        ↓
+SQL / Databases
+        ↓
+Pandas
+        ↓
+ETL
+        ↓
+API Integration
+        ↓
+Automation
+        ↓
+Data Mart
+        ↓
+Production Support
+
+
+---
+
+✅ Chapter 01 Completion Checklist
+
+[ ] Python overview
+
+[ ] Python interpreter
+
+[ ] Python execution model
+
+[ ] Python versions
+
+[ ] Python installation
+
+[ ] Python environment
+
+[ ] Interactive interpreter
+
+[ ] .py files
+
+[ ] Python syntax
+
+[ ] Indentation
+
+[ ] Comments
+
+[ ] Variables
+
+[ ] Naming conventions
+
+[ ] Constants
+
+[ ] Keywords
+
+[ ] Identifiers
+
+[ ] Literals
+
+[ ] Dynamic typing
+
+[ ] Strong typing
+
+[ ] int
+
+[ ] float
+
+[  ↓
 Bytecode
   ↓
 Python Virtual Machine

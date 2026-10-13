@@ -1003,7 +1003,127 @@ Phase 4
 Phase 5 + Phase 6 + Phase 7
 = senior, durable, AI-enabled Murex career
 ```
+# Murex Complete Syllabus — Phase-wise Learning Plan
 
+This syllabus covers Murex MX.3 from basic orientation to advanced
+Production Support, Datamart/Reporting, MxML Integration, Risk, and
+Techno-Functional specialization.
+
+The plan is designed for professionals with experience in SQL/PLSQL,
+Linux/Shell, Control-M, ETL, reconciliation, regulatory reporting,
+and UAT who want to move into Murex support and techno-functional roles.
+
+---
+
+# Complete Murex Syllabus
+
+| Phase | Module No. | Chapter / Topic | Learning Objective | Level | Approx. Pages |
+|---|---:|---|---|---|---:|
+| Phase 0 | 0.1 | What is Murex MX.3? | Understand Murex purpose, users, modules, and business value | Basic | 5–6 |
+| Phase 0 | 0.2 | Capital Markets and Bank Functions | Understand FO, MO, BO, Risk, Finance, Operations, Technology | Basic | 5–6 |
+| Phase 0 | 0.3 | Murex MX.3 Architecture Overview | Understand presentation, business, orchestration, technical, data, integration layers | Basic | 6–8 |
+| Phase 0 | 0.4 | Trade Lifecycle Overview | Understand trade to confirmation, settlement, accounting, reporting | Basic | 7–8 |
+| Phase 0 | 0.5 | Core Murex Terminology | Learn trade, contract, event, cash flow, book, portfolio, position | Basic | 8–10 |
+| Phase 0 | 0.6 | Environments, Access, and Audit | Understand DEV, SIT, UAT, PROD, access, audit, releases | Basic | 5–6 |
+| Phase 0 | 0.7 | Murex User Roles and Responsibilities | Understand trader, operations, risk, finance, IT/support responsibilities | Basic | 4–6 |
+| Phase 0 | 0.8 | Murex Support Ecosystem | Understand upstream/downstream systems, interfaces, batch, reporting | Basic | 5–7 |
+| Phase 1 | 1.1 | Capital Markets Products | Understand FX, bonds, IRS, options, repo | Basic | 10–12 |
+| Phase 1 | 1.2 | FX Forward Deep Dive | Master FX Forward terms, lifecycle, settlement, valuation | Basic | 10–12 |
+| Phase 1 | 1.3 | FX Spot and FX Swap Basics | Understand currency pairs, spot, near/far legs, settlement | Basic | 6–8 |
+| Phase 1 | 1.4 | Interest Rate Swap Basics | Understand fixed/floating legs, reset, fixing, valuation | Basic | 9–11 |
+| Phase 1 | 1.5 | Bonds and Fixed Income Basics | Understand coupon, maturity, clean/dirty price, accrued interest | Basic | 7–9 |
+| Phase 1 | 1.6 | Options Basics | Understand strike, expiry, premium, exercise, valuation inputs | Basic | 6–8 |
+| Phase 1 | 1.7 | Trade, Contract, Event, Cash Flow | Understand core Murex business-object relationships | Basic | 8–10 |
+| Phase 1 | 1.8 | Book, Portfolio, Position | Understand ownership, aggregation, P&L, reporting | Basic | 7–9 |
+| Phase 1 | 1.9 | Counterparty and Legal Entity | Understand parties, hierarchy, agreements, exposure | Basic | 7–9 |
+| Phase 1 | 1.10 | Static Data | Understand calendars, currencies, SSI, books, controls | Intermediate | 11–14 |
+| Phase 1 | 1.11 | Market Data | Understand FX, curves, fixings, volatility, data quality | Intermediate | 11–14 |
+| Phase 1 | 1.12 | Trade Capture, Validation, Enrichment | Understand booking, validation, defaulting, amendment | Intermediate | 10–12 |
+| Phase 1 | 1.13 | Pricing, Valuation, and P&L | Understand MTM, PV, discounting, realized/unrealized P&L | Intermediate | 10–12 |
+| Phase 1 | 1.14 | Workflow, Pre-Trade, Post-Trade | Understand states, transitions, exceptions, reprocessing | Intermediate | 9–11 |
+| Phase 1 | 1.15 | MSL Business Rules | Understand validation, defaulting, lookup, routing, dates | Intermediate | 10–12 |
+| Phase 1 | 1.16 | Confirmation, Settlement, Accounting | Understand confirmations, payments, SSI, accounting events | Intermediate | 9–11 |
+| Phase 1 | 1.17 | Risk Basics for Murex | Understand market risk, credit risk, limits, exposure, VaR concepts | Intermediate | 8–10 |
+| Phase 1 | 1.18 | Collateral and Margin Basics | Understand collateral agreements, margin calls, exposure | Intermediate | 6–8 |
+| Phase 1 | 1.19 | Functional Testing and UAT | Understand SIT, UAT, test cases, defects, evidence | Intermediate | 10–12 |
+| Phase 2 | 2.1 | L1, L2, L3 Support Model | Understand support roles, ownership, escalation | Intermediate | 6–8 |
+| Phase 2 | 2.2 | Incident, Problem, Change Management | Understand SLA, severity, priority, RCA, workaround | Intermediate | 8–10 |
+| Phase 2 | 2.3 | Murex Logs and Monitoring | Understand logs, message IDs, alerts, health checks | Intermediate | 8–10 |
+| Phase 2 | 2.4 | Linux/Unix for Murex Support | Use logs, processes, permissions, files, commands | Intermediate | 10–12 |
+| Phase 2 | 2.5 | Batch, EOD, and Control-M | Understand dependencies, reruns, restarts, EOD sequence | Intermediate | 10–12 |
+| Phase 2 | 2.6 | SQL for Murex Support | Use joins, duplicate checks, missing records, reconciliation | Intermediate | 12–15 |
+| Phase 2 | 2.7 | Reconciliation and Data Quality | Understand counts, notionals, breaks, exception reports | Intermediate | 10–12 |
+| Phase 2 | 2.8 | Datamart/Reporting Lineage | Understand trade to feeder to Datamart to report | Intermediate | 10–12 |
+| Phase 2 | 2.9 | Common Production Incidents | Investigate missing trade, failed batch, bad data, report breaks | Advanced | 12–15 |
+| Phase 2 | 2.10 | RCA, Runbooks, Ticket Communication | Learn RCA, documentation, ticket updates, PIR | Advanced | 9–11 |
+| Phase 2 | 2.11 | Support UAT and Regression | Validate fixes, controlled reruns, regression testing | Advanced | 8–10 |
+| Phase 2 | 2.12 | L2/L3 Interview Preparation | Prepare support scenarios, answers, project stories | Advanced | 12–15 |
+| Phase 3 | 3.1 | Murex Data Model Overview | Understand business objects, relationships, reference data, transactions | Advanced | 10–14 |
+| Phase 3 | 3.2 | Murex Datamart Concepts | Understand reporting structures, feeders, extracts, aggregation | Advanced | 12–15 |
+| Phase 3 | 3.3 | Datamart Feeders and Extracts | Understand feeder configuration, extract logic, scheduling | Advanced | 12–15 |
+| Phase 3 | 3.4 | Reporting and BI Integration | Understand report generation, BI tools, downstream reporting | Advanced | 10–12 |
+| Phase 3 | 3.5 | Regulatory Reporting Concepts | Understand regulatory data needs, controls, reconciliation, audit | Advanced | 10–12 |
+| Phase 3 | 3.6 | Data Quality and Reconciliation Framework | Build data-quality checks, break analysis, exception handling | Advanced | 10–12 |
+| Phase 3 | 3.7 | MxML Integration Overview | Understand MxML purpose, XML messages, integration patterns | Advanced | 10–12 |
+| Phase 3 | 3.8 | MxML Message Flow | Understand inbound/outbound messages, mapping, enrichment, routing | Advanced | 12–15 |
+| Phase 3 | 3.9 | MxML Mapping and Transformation | Understand field mapping, transformation, lookup, validation | Advanced | 12–15 |
+| Phase 3 | 3.10 | MxML Error Handling and Reprocessing | Understand message failure, recovery, resubmission, audit | Advanced | 10–12 |
+| Phase 3 | 3.11 | Murex Interfaces and Connectivity | Understand files, APIs, messaging, middleware, upstream/downstream systems | Advanced | 10–12 |
+| Phase 3 | 3.12 | Murex Batch and Job Orchestration | Understand complex dependencies, parallel jobs, restart strategy | Advanced | 10–12 |
+| Phase 3 | 3.13 | Murex Performance and Capacity Basics | Understand slow reports, batch performance, data volume, tuning awareness | Advanced | 8–10 |
+| Phase 3 | 3.14 | Murex Security and Access Control | Understand roles, permissions, segregation of duties, audit | Advanced | 8–10 |
+| Phase 3 | 3.15 | Murex Release and Deployment Support | Understand releases, configuration promotion, rollback, regression | Advanced | 8–10 |
+| Phase 4 | 4.1 | Advanced Trade Lifecycle Scenarios | Handle amendments, cancellations, novations, backdating, corrections | Advanced | 10–12 |
+| Phase 4 | 4.2 | Advanced Valuation and P&L Scenarios | Investigate valuation differences, curve impact, P&L attribution | Advanced | 10–12 |
+| Phase 4 | 4.3 | Advanced Risk and Limit Scenarios | Investigate exposure, limit breaches, risk data issues | Advanced | 10–12 |
+| Phase 4 | 4.4 | Advanced Collateral Scenarios | Investigate collateral calls, eligibility, margin, exposure mismatch | Advanced | 8–10 |
+| Phase 4 | 4.5 | Advanced Datamart Reporting Scenarios | Investigate missing data, wrong totals, duplicates, late data | Advanced | 12–15 |
+| Phase 4 | 4.6 | Advanced MxML Integration Scenarios | Investigate schema, mapping, enrichment, routing, acknowledgement failures | Advanced | 12–15 |
+| Phase 4 | 4.7 | Advanced EOD and Batch Failure Scenarios | Handle partial failures, dependency breaks, rerun strategy | Advanced | 10–12 |
+| Phase 4 | 4.8 | Advanced Reconciliation Scenarios | Investigate source vs Murex vs report vs downstream differences | Advanced | 10–12 |
+| Phase 4 | 4.9 | Advanced UAT and Regression Strategy | Design end-to-end regression and release validation | Advanced | 8–10 |
+| Phase 4 | 4.10 | Advanced RCA and Problem Management | Perform deep RCA, trend analysis, prevention, knowledge base creation | Advanced | 10–12 |
+| Phase 4 | 4.11 | Techno-Functional Consulting Skills | Translate business requirements into technical solutions | Advanced | 8–10 |
+| Phase 4 | 4.12 | Murex Interview Mastery | Prepare senior support, Datamart, MxML, techno-functional interviews | Advanced | 15–20 |
+
+---
+
+# Phase-wise Learning Goals
+
+| Phase | Goal | Expected Outcome |
+|---|---|---|
+| Phase 0 | Orientation | Explain Murex ecosystem, architecture, lifecycle, and terminology |
+| Phase 1 | Functional Foundation | Explain trade lifecycle, products, static/market data, workflow, UAT |
+| Phase 2 | Production Support L2/L3 | Investigate incidents, batches, logs, SQL, reconciliation, reports |
+| Phase 3 | Advanced Technical Specialization | Work on Datamart, MxML, interfaces, data quality, performance |
+| Phase 4 | Advanced Scenario Mastery | Handle complex production issues and techno-functional requirements |
+
+---
+
+# Suggested Learning Timeline
+
+| Phase | Duration | Focus |
+|---|---:|---|
+| Phase 0 | 1–2 weeks | Orientation and foundation |
+| Phase 1 | 4–6 weeks | Functional and business knowledge |
+| Phase 2 | 4–5 weeks | Support readiness and interview preparation |
+| Phase 3 | 6–8 weeks | Datamart, MxML, integration, advanced support |
+| Phase 4 | Ongoing | Advanced scenarios, RCA, consulting, interview mastery |
+
+---
+
+# Recommended Study Sequence
+
+```text
+Phase 0: Orientation
+↓
+Phase 1: Functional Foundation
+↓
+Phase 2: Production Support L2/L3
+↓
+Phase 3: Datamart, MxML, Integration
+↓
+Phase 4: Advanced Scenarios and Techno-Functional Mastery
 Your current stack is not a weakness—it is exactly the support/data/automation foundation from which a Murex techno-functional career can be built.
 
 Citations:
